@@ -1,8 +1,15 @@
 # Xilinx_KV260_Workshop
 
-# SOM Workshop
-This workshop is designed to set up the KV260 Starter Kit board and then run AA1 Smart Camera application on the SOM board. 
-The KV260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, integrated power solution, and security module. The vision-focused SOM carrier card includes various application peripheral options such as camera, sensor inputs, video display outputs, USB, SD card, and Ethernet interfaces.
+This repository is designed to set up the KV260 Starter kit board and then run Accelerated Applications (AA) on the SOM board. Working through each section will help you learn how to integrate Xilinx carrier card with your AI and/or Smart Camera applications.
+
+The KV 260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, integrated power solution, and security module. The vision-focused SOM carrier card includes various application peripheral options such as camera, sensor inputs, video display outputs, USB, SD card, and Ethernet interfaces.
+
+## Part 1: Setup Board and Environment
+In this part, you will connect the cables, SD card, and boot your SOM board via image.
+
+## Part 2: Running through AA1
+In this part, you will be able to see the packages available on the SOM board and be able to run through AA1.
+
  Select any the listed OS below to start the initial setup: 
 -	[Windows]()
 -	[Linux]()
