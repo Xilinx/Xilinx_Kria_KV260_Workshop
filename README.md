@@ -9,8 +9,8 @@ The KV260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volat
 -	[Mac]()
 
 These are the necessary files needed to run the AA1 successfully:
--	Petalinux-sdimage.wic
--	Som_bootmode.tcl 
+-
+-
 
 ## Item’s you’ll need to provide to bring up the lab
  - Barrel Jack Power supply (12V,3A)
