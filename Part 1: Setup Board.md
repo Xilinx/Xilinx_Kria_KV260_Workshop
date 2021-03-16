@@ -51,3 +51,6 @@ After opening Tera Term or Putty you will configure the settings in the followin
 -	Parity = None
 
 Power on the SOM board by connecting the power supply and observer the LED’s illuminating. 
+
+[Go to Part 2: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
+[Return to Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
