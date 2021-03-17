@@ -26,7 +26,7 @@ Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that
 | [Download](https://www.balena.io/etcher/ ) | [Download](https://sourceforge.net/projects/win32diskimager/ ) |
 | [Instructions for Balena Etcher](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md) | [Instructions for Win32](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md ) |
 
-In addition, you will need to download the FTDI virtual COM port driver as it connects to the COM port device. You can install it at the following [link] (https://www.ftdichip.com/Drivers/VCP.htm)
+In addition, you will need to download the FTDI virtual COM port driver as it connects to the COM port device. You can install it at the following [link](https://www.ftdichip.com/Drivers/VCP.htm)
 
 ## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
