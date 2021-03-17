@@ -1,7 +1,7 @@
 # Part 2: Running through AA1
 
 
-After the boot, you will observe the green heart LED flashing along the SOM fan at LED, 
+After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
 In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
 
@@ -9,6 +9,7 @@ The Linux prompt will open and you can enter the following commands to execute t
 
 ```
 Xmutil.py loadapp AA1
+smartcam_aa1 --mipi 0 -W 1920 -H 1080 
 ```
 
 If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
