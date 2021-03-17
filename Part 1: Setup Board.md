@@ -26,8 +26,8 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 ## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
--	Connect the IAS camera module (AR 1335) or plug the USB camera to U44 or U46.
--	Optionally, you can also connect the HDMI cable to J5 or the DisplayPort cable to J6.  
+-	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46.
+-	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
 
 You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
 
