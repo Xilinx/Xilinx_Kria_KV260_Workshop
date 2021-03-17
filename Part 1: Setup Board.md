@@ -21,12 +21,11 @@ You will need the following tools installed on your computer or access via [AWS]
 If you already have an SD card with the image pre-installed, you may skip this step. 
 
 Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. You can use one of the following tools to write the disk image. The instructions for writing to the SD card are included as well:
-- Balena Etcher
-[Download] (https://www.balena.io/etcher/ )
-- Win32 Disk Image
-[Download] (https://sourceforge.net/projects/win32diskimager/ )
-[Instructions for Balena Win32] (https://www.raspberrypi.org/documentation/installation/installing-images/windows.md )
-- Linux dd tool 
+| Balena Etcher | Win32 Disk |
+| --- | --- |
+| [Download] (https://www.balena.io/etcher/ ) | [Download] (https://sourceforge.net/projects/win32diskimager/ ) |
+| [Instructions for Balena Etcher] (https://www.balena.io/etcher/ ) | [Instructions for Win32] (https://www.raspberrypi.org/documentation/installation/installing-images/windows.md ) |
+
 In addition, you will need to download the FTDI virtual COM port driver as it connects to the COM port device. You can install it at the following [link] (https://www.ftdichip.com/Drivers/VCP.htm)
 
 ## 2. Board Set up
