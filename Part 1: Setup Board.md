@@ -33,10 +33,13 @@ You can refer to the following image to pinpoint the interfaces and connectors o
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
  
-For a linux environment, you can write to the SD card directly through the terminal: 
+For a linux environment, you can write to the SD card directly through the terminal.
+
+First, identify the correct device to write to with the following command:
+
 `$ dmesg | grep sd|tail`
-The above command will identify what device to write it to.
-Then you can use the following commands to write image to the SD card:
+
+Then you can use the following commands to write image to the SD card where sd<?> represents the sd card to write to:
 ```
 $gunzip petalinux-sdimage.wic.gz
 dd if=petalinux-sdimage.wic of=/dev/sd<?>conv-fsync
