@@ -1,13 +1,18 @@
 # Part 2: Running through AA1
 
 
-After the boot, you will observe the green heart LED flashing at 
-You can log in via username is *root*, and the password is *root*.
-After opening the console, the Linux prompt will open and you can enter the following commands to execute the Smart Camera Application:
+After the boot, you will observe the green heart LED flashing along the SOM fan at LED, 
+
+In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
+
+The Linux prompt will open and you can enter the following commands to execute the Smart Camera Application:
+
 ```
-Xmutil.py listapps
 Xmutil.py loadapp AA1
 ```
+
+If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
+
 
 You can use `xmutil.py lisapps` to see what other applications exist. 
 
