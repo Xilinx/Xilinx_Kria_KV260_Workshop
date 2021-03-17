@@ -50,7 +50,7 @@ sudo eject /dev/sd<?>
 
 ## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
-After opening Tera Term or Putty you will configure the settings in the following format: 
+After opening Tera Term or Putty, select the COM port listed first (i.e. select COM 13 if COM 13 and COM 14 are listed). You will configure the settings in the following format: 
 -	Baud rate = 115200
 -	Data bits = 8
 -	Stop bits = 1
