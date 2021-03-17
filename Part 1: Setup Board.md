@@ -1,5 +1,5 @@
 # Part 1: Setup Board
-## Item’s you’ll need to provide to bring up the lab
+## Items you’ll need to provide to bring up the lab
 - Barrel Jack Power supply (12V,3A)
 - MicroSD card [32GB UHS-1]
 - Micro-USB to USB-A cable
