@@ -7,11 +7,6 @@
 - Ethernet cable
 - HDMI/DI cable (optional) to connect a monitor display
 
-You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
-
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
-
- 
 ## Xilinx Tools needed to Boot via SD card
 You will need the following tools installed on your computer or access via [AWS]() in order to boot via SD card
 - Vivado/Vitis for xsdb or xsct console
@@ -33,6 +28,10 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
 -	Connect the IAS camera module (AR 1335) or plug the USB camera to U44 or U46.
 -	Optionally, you can also connect the HDMI cable to J5 or the DisplayPort cable to J6.  
+
+You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
+
+<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
  
 For a linux environment, you can write to the SD card directly through the terminal: 
 `$ dmesg | grep sd|tail`
