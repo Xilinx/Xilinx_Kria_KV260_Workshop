@@ -1,6 +1,7 @@
 # Part 2: Running through AA1
 
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
+
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
 Open a XSDB or XSCT console and enter the following commands:
@@ -24,7 +25,6 @@ smartcam_aa1 --mipi 0 -W 1920 -H 1080
 If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
-
 
 To exit out of the AA, use the following command: `xmutil.py unloadapp kv260-aa1`
 
