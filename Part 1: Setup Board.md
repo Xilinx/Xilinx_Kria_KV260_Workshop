@@ -18,7 +18,7 @@ You will need the following tools installed on your computer or access via [AWS]
 - PetaLinux (2020.2 or later)
 
 ## Write to SD card
-Using the downloaded image, petalinux-sdimage.wic, write the image into an sdcard that is plugged into the computer. You can use one of the following tools to write the disk image, and instructions are outlined in the following resources:
+Using the downloaded petalinux-sdimage.wic, write the image into an sdcard that is plugged into the computer. You can use one of the following tools to write the disk image, and instructions are outlined in the following resources:
 - Balena Etcher
 [Download] (https://www.balena.io/etcher/ )
 - Win32 Disk Image
