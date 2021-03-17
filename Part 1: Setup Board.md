@@ -11,6 +11,7 @@
 You will need the following tools installed on your computer or access via [AWS]() in order to boot via SD card
 - Vivado/Vitis for xsdb or xsct console
 - PetaLinux (2020.2 or later)
+- [Putty](https://www.putty.org/) and or [Tera Term](https://ttssh2.osdn.jp/index.html.en) Terminal (click on the link to download an application terminal)
 
 ## 1. Write to SD card
 If you already have an SD card with the image pre-installed, you may skip this step. 
@@ -56,7 +57,9 @@ After opening Tera Term or Putty you will configure the settings in the followin
 -	Flow control = None
 -	Parity = None
 
-Power on the SOM board by connecting the power supply and observer the LED’s illuminating. 
+Power on the SOM board by connecting the power supply into J12 and into the wall outlet. Observe the LED’s illuminating to indicate power. 
+
+Plug USB cable connected into J4 into your local computer and proceed to the next part below:
 
 [Go to Part 2: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
 
