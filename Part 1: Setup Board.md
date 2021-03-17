@@ -24,7 +24,7 @@ Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that
 | Balena Etcher | Win32 Disk |
 | --- | --- |
 | [Download](https://www.balena.io/etcher/ ) | [Download](https://sourceforge.net/projects/win32diskimager/ ) |
-| [Instructions for Balena Etcher](https://www.balena.io/etcher/ ) | [Instructions for Win32](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md ) |
+| [Instructions for Balena Etcher](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md) | [Instructions for Win32](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md ) |
 
 In addition, you will need to download the FTDI virtual COM port driver as it connects to the COM port device. You can install it at the following [link] (https://www.ftdichip.com/Drivers/VCP.htm)
 
