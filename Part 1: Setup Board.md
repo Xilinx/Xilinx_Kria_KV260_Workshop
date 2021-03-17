@@ -8,6 +8,7 @@
 - HDMI/DI cable (optional) to connect a monitor display
 
 You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
+
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
  
