@@ -17,8 +17,10 @@ You will need the following tools installed on your computer or access via [AWS]
 - Vivado/Vitis for xsdb or xsct console
 - PetaLinux (2020.2 or later)
 
-## Write to SD card
-Using the downloaded petalinux-sdimage.wic, write the image into an sdcard that is plugged into the computer. You can use one of the following tools to write the disk image, and instructions are outlined in the following resources:
+## 1. Write to SD card
+If you already have an SD card with the image pre-installed, you may skip this step. 
+
+Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. You can use one of the following tools to write the disk image, and instructions are outlined in the following resources:
 - Balena Etcher
 [Download] (https://www.balena.io/etcher/ )
 - Win32 Disk Image
@@ -27,7 +29,7 @@ Using the downloaded petalinux-sdimage.wic, write the image into an sdcard that 
 - Linux dd tool 
 In addition, you will need to download the FTDI virtual COM port driver as it connects to the COM port device. You can install it at the following [link] (https://www.ftdichip.com/Drivers/VCP.htm)
 
-## Board Set up
+## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
 -	Connect the IAS camera module (AR 1335) or plug the USB camera to U44 or U46.
@@ -44,7 +46,7 @@ sudo eject /dev/sd<?>
 ```
 
 
-## Configure your terminal
+## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
 After opening Tera Term or Putty you will configure the settings in the following format: 
 -	Baud rate = 115200
