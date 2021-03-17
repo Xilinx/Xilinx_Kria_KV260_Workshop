@@ -13,7 +13,7 @@ You can refer to the following image to pinpoint the interfaces and connectors o
 
  
 ## Xilinx Tools needed to Boot via SD card
-You will need the following tools in order to boot via SD card
+You will need the following tools installed on your computer or access via [AWS]() in order to boot via SD card
 - Download Vivado/Vitis
 - Download PetaLinux (2020.2 or later)
 
