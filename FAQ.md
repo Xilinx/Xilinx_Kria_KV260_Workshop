@@ -19,6 +19,8 @@ Platform Management utility (xmutil) commands help configure and work the SOM bo
 
 
 
+<br><br>
+
 | Issue  | Resolution |
 | ------------- | ------------- |
 | There is a heartbeat LED active, but UART isn't responding.  |Verify that your machine has a FTDI driver installed and that the terminal is connected to the correct COM port.  |
