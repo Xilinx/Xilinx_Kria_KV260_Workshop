@@ -37,7 +37,16 @@ sudo eject /dev/sd<#>
 ## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
--	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46.
+-	-	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. The supported cameras are listed below (from UG 1089):
+
+
+|Accelerated Application |Peripheral |Part Number|
+| ------------- | ------------- | ------------- |
+|Smart camera AA1 | IAS camera sensor ISP interface (J7)| OnSemi AR1335 sensor module. Avnet part number: CAVBA-000A|
+|Smart camera AA1 | USB camera| Logitech BRIO|
+|Smart camera AA1 | Audio Codec I2S2 PMOD (J2)| Digilent PMOD SKU 410-379|
+|Defect detection AA4| IAS camera sensor ISP interface (J7)| OnSemi AR0144 sensor module. Avnet part number: CAV10-000A|
+
 -	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
 
 You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
