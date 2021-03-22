@@ -29,7 +29,7 @@ Use the following command `diskutil list` to identify the SD card. In this examp
 
 If the SD card has an existing partition, you may need to unmount it with the following command: `diskutil unmount /dev/disk3s1`
 
-Then enter the following commands in the terminal,replacing **disk3** with your SD card number:
+Then enter the following commands in the terminal, replacing **disk3** with your SD card number:
 ```
 sudo dd if=petalinux-sdimage.wic of=/dev/rdisk3 bs=1m
 ```
@@ -50,13 +50,13 @@ You can refer to the following image to pinpoint the interfaces and connectors o
 ## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
 
-Within the same Mac terminal, you will need to identify the connected USB cable. Enter the following command to observe which COM ports appear when you plug in the USB cable attached to the KV260 into your computer
+You will need to identify the connected USB cable. Within the same Mac terminal, enter the following command to observe which COM ports appear when you plug in the USB cable attached to the KV260 into your computer
 
 `ls /dev/tty.*`
 
-Select the COM port listed first (i.e. select COM 13 if COM 13 and COM 14 are listed).
+Select the COM port listed first (i.e. select usbserial00022331 if COM usbserial00022331 and COM usbserial01122331 are listed).
 
-You will configure the settings using the following command: `screen /dev/tty.usbserail00022331`
+You will configure the settings using the following command: `screen /dev/tty.usbserial00022331`
 
 This corresponds to the corresponding format:
 -	Baud rate = 115200
