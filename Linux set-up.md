@@ -37,7 +37,7 @@ sudo eject /dev/sd<#>
 ## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
--	-	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. The supported cameras are listed below (from UG 1089):
+-	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. The supported cameras are listed below (from UG 1089):
 
 
 |Accelerated Application |Peripheral |Part Number|
