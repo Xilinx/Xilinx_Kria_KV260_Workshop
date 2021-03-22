@@ -17,3 +17,13 @@ Go to Part 1:
 In this part, you will be able to see the packages available on the SOM board and be able to run through AA1, the Smart Camera application.
 
 [Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
+
+
+Additional Resources:
+
+ - [Xilinx website](https://www.xilinx.com/)
+ - [SOM Board]()
+ - [Production SOM] ()
+ - [Description of Accelerated Application (AAs)](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
+ - [FAQs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md)
+ 
