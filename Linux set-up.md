@@ -47,7 +47,7 @@ You can refer to the following image to pinpoint the interfaces and connectors o
 ## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
 
-Within the same Linux terminal, you will need to identify the connected USB cable. Enter the following command to observe which COM ports appear when you plug in the USB cable attached to the KV260 into your computer
+You will need to identify the connected USB cable. Within the same Linux terminal, enter the following command to observe which COM ports appear when you plug in the USB cable attached to the KV260 into your computer
 
 `dmesg | grep tty`
 
