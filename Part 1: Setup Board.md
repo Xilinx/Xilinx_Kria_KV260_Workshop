@@ -1,3 +1,8 @@
+# Windows set-up
+If you are using a Windows environment, you can use these instructions for your set-up.
+
+You can click on the following links for [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
+
 # Part 1: Setup Board
 ## Items you’ll need to provide to bring up the lab
 - Barrel Jack Power supply (12V,3A)
@@ -15,7 +20,6 @@ You will need the following tools installed on your computer or access via [AWS]
 
 ## 1. Write to SD card
 If you already have an SD card with the image pre-installed, you may skip this step. 
-These steps are for a Windows environment. You can click on the following links for [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
 
 Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. You can use one of the following tools to write the disk image. The instructions for writing to the SD card are included as well:
 | Balena Etcher | Win32 Disk |
