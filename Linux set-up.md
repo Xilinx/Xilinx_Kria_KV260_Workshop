@@ -1,5 +1,5 @@
 # Linux set-up
-If you are using a Linux environment, you can use these instructions for your set-up.
+If you are using a **Linux** environment, you can use these instructions for your set-up.
 
 You can click on the following links for [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/edit/main/Part%201:%20Setup%20Board.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
 
@@ -22,7 +22,11 @@ You will need the following tools installed on your computer or access via [AWS]
 ## 1. Write to SD card
 If you already have an SD card with the image pre-installed, you may skip this step. 
 
-Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. Open a new terminal. You will want to check what device is assigned to. Use the following command `dmesg|grep sd|tail` to identify the SD card. In this example, we'll use sd<#> to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. 
+Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. First, open a new terminal to check what device is assigned to the SD card.
+
+Use the following command `dmesg|grep sd|tail` to identify the SD card. In this example, we'll use sd<#> to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. The image below indicates the correct device based on the size and type of device: 
+
+<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
 Then enter the following commands in the terminal,replacing sd<#> with your SD card number:
 ```
