@@ -23,11 +23,11 @@ If you already have an SD card with the image pre-installed, you may skip this s
 
 Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. First, open a new terminal to check what device is assigned to the SD card.
 
-Use the following command `dmesg|grep sd|tail` to identify the SD card. In this example, we'll use sd<#> to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. The image below indicates the correct device based on the size and type of device: 
+Use the following command `dmesg|grep sd|tail` to identify the SD card. In this example, we'll use **sd<#>** to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. The image below indicates the correct device based on the size and type of device: 
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
-Then enter the following commands in the terminal,replacing sd<#> with your SD card number:
+Then enter the following commands in the terminal,replacing **sd<#>** with your SD card number:
 ```
 gunzip petalinux-sdimage.wic.gz
 dd if=petalinux-sdimage.wic of=/dev/sd<#>conv=fsync
