@@ -23,7 +23,7 @@ In this part, you will be able to see the packages available on the SOM board an
 
  - [Xilinx website](https://www.xilinx.com/)
  - [SOM Board]()
- - [Production SOM] ()
+ - [Production SOM]()
  - [Description of Accelerated Application (AAs)](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
  - [FAQs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md)
  
