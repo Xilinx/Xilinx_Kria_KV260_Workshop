@@ -9,9 +9,9 @@ The KV 260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-vola
 In this part, you will connect the cables, camera, and SD card to the board and boot the SOM via pre-installed image. 
 
 Go to Part 1: 
-[Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
-[Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
-[Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
+ - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
+ - [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
+ - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
 
 ## Part 2: Running through AA1
 In this part, you will be able to see the packages available on the SOM board and be able to run through AA1, the Smart Camera application.
