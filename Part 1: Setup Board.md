@@ -38,9 +38,9 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 |Accelerated Application |Peripheral |Part Number|
 | ------------- | ------------- | ------------- |
 |Smart camera AA1 | IAS camera sensor ISP interface (J7)| OnSemi AR1335 sensor module. Avnet part number: CAVBA-000A|
-|Smart camera AA1 | USB camera Logitech BRIO|
-|Smart camera AA1 | Audio Codec I2S2 PMOD (J2) Digilent PMOD SKU 410-379|
-|Defect detection AA4| IAS camera sensor ISP interface (J7) OnSemi AR0144 sensor module. Avnet part number: CAV10-000A|
+|Smart camera AA1 | USB camera| Logitech BRIO|
+|Smart camera AA1 | Audio Codec I2S2 PMOD (J2)| Digilent PMOD SKU 410-379|
+|Defect detection AA4| IAS camera sensor ISP interface (J7)| OnSemi AR0144 sensor module. Avnet part number: CAV10-000A|
 
 -	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
 
