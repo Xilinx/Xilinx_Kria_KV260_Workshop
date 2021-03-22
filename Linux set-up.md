@@ -1,7 +1,7 @@
 # Linux set-up
 If you are using a **Linux** environment, you can use these instructions for your set-up.
 
-You can click on the following links for [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/edit/main/Part%201:%20Setup%20Board.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
+You can click on the following links for [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
 
 
 # Part 1: Setup Board
