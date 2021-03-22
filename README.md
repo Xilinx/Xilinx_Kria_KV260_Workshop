@@ -19,7 +19,7 @@ In this part, you will be able to see the packages available on the SOM board an
 [Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
 
 
-Additional Resources:
+## Additional Resources
 
  - [Xilinx website](https://www.xilinx.com/)
  - [SOM Board]()
