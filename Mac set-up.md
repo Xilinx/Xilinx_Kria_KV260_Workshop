@@ -1,4 +1,4 @@
-# Mac set-up
+# Mac Set-up
 If you are using a **Mac**, you can use these instructions to set-up the Mac section
 
 You can click on the following links for [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md) and [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md) enviroments. 
