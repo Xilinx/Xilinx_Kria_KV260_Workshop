@@ -22,10 +22,9 @@ In this part, you will be able to see the packages available on the SOM board an
 ## Additional Resources
 Please refer to any of the links below to learn more about the SOM carrier card, how to connect via Amazon Web Services (AWS), or go to Xilinx's homepage.
 
-
  - Xilinx SOM platform enables a number of accelerated applications. These can be dynamically installed on the SOM board. You can learn about the Accelerated Applications or AAs [here](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
+ - If you have any questions or issues, you can refer to the [FAQs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md)
  - Learn more about the [SOM Board]() and any [technical documents]() or [datasheets]()
  - Learn more about the [Production SOM]()
- - [here](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
- - [FAQs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md)
+ - Please visit Xilinx's [website](https://www.xilinx.com/about/company-overview.html) to learn more about the company and industrial products
  
