@@ -1,6 +1,6 @@
 This document outlines important questions and solutions you may need when working with the SOM board
 
-**Include hyperlinks to jump to item on table contents **
+**Include hyperlinks to jump to item on table contents**
 
 Platform Management utility (xmutil) commands help configure and work the SOM board. You can refer to the table below for the command and description. This table comes from UG 1089:
 
