@@ -12,7 +12,7 @@ Go to Part 1:
  - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
  - [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
  - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
- - 
+ 
 ## Part 2: Exploring the Different AAs
 In this part, you will see the various Accelerated Applications available on the SOM board.
 
