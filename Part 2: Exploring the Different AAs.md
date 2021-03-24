@@ -19,7 +19,7 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 [Return to Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
 
-[Go to Part 3: Exploring the Different AAs]https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+[Go to Part 3: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
 
 [Return to Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
