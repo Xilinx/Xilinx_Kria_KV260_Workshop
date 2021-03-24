@@ -1,4 +1,4 @@
-# Part 2: Running through AA1
+# Part 3: Running through AA1
 
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
