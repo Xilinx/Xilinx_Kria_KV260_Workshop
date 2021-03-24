@@ -30,23 +30,25 @@ If you have an HDMI or DP monitor connected to the board, you will see the follo
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
-To exit out of the AA1, use the following command: `xmutil.py unloadapp kv260-aa1`
+To exit out of the AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
 ## AA2: AI box
-
 ```
 xmutil loadapp kv260-aa2
 ```
+To exit out of the AA2, use the following command: `xmutil unloadapp kv260-aa2`
 
 ## AA4: Defect detection
 ```
 xmutil loadapp kv260-aa4
 ```
+To exit out of the AA4, use the following command: `xmutil unloadapp kv260-aa4`
 
 ## AA5: License plate recognition
 ```
 xmutil loadapp kv260-aa5
 ```
+To exit out of the AA5, use the following command: `xmutil unloadapp kv260-aa5`
 
 Return to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
 
