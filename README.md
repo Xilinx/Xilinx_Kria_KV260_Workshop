@@ -12,11 +12,17 @@ Go to Part 1:
  - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
  - [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
  - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
+ - 
+## Part 2: Exploring the Different AAs
+In this part, you will see the various Accelerated Applications available on the SOM board.
 
-## Part 2: Running through AA1
-In this part, you will be able to see the packages available on the SOM board and be able to run through AA1, the Smart Camera application.
+[Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
-[Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
+
+## Part 3: Running through AA1
+In this part, you will be diving deeper into AA1, the Smart Camera application.
+
+[Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
 
 
 ## Additional Resources
