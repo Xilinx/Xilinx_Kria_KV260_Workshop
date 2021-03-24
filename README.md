@@ -22,7 +22,7 @@ In this part, you will see the various Accelerated Applications available on the
 ## Part 3: Running through AA1
 In this part, you will be diving deeper into AA1, the Smart Camera application.
 
-[Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Running%20through%20AA1.md)
+[Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
 
 ## Additional Resources
