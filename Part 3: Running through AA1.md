@@ -1,22 +1,5 @@
 # Part 3: Running through AA1
 
-After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
-
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
-
-Open a XSDB or XSCT console and enter the following commands:
-```
-xsct% connect
-xsct% source <path>/som_bootmode_EA0-BSP.tcl
-xsct% boot_sd
-```
-
-In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
-
-You can then enter the following commands to execute the Smart Camera Application after you see the following window appear:
-
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
-
 ```
 xmutil.py loadapp kv260-aa1
 smartcam_aa1 --mipi 0 -W 1920 -H 1080 
