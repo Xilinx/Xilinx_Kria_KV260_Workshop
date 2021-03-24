@@ -16,6 +16,6 @@ You can use `xmutil.py lisapps` to see what other applications exist.
 If you need to set up a static address within your host machine, you can follow the instructions at this link:
 [Setting up a private network](https://xilinx.github.io/vck190-base-trd/build/html/run.html#setting-a-private-network) 
 
-Return to Part 2:[Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
+Return to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
