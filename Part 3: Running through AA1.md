@@ -10,6 +10,29 @@ You can download one of the demo videos to test this feature:
 
 Then you can enter the following command into the Linux console: `ffmpeg -i input-video.mp4 -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264`
 
+## Using Jupyter Notebook 
+You can use a web-browser notebook to interact with the SOM board.
+To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
+
+You will enter this URL in order to access the notebook. 
+
+## Exploring different features of AA1
+
+There are many applications and features to utilize and explore through AA1. We will dive into each section: 
+
+### MIPI DP display
+Before continuing ensure that you are connected to a monitor via Display Port and not HDMI
+
+Utilize the following command: `sudo 02.mipi-dp.sh`
+This will play a video with the captured detection results onto the monitor.
+
+When asked, enter the width and height as the 1st and 2nd parameter. The default value will be 1920 and 1080 respectively.
+
+To verify
+
+### 
+
+
 To exit out of the AA, use the following command: `xmutil unloadapp kv260-aa1`
 
 You can use `xmutil lisapps` to see what other applications exist. 
