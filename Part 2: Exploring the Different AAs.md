@@ -9,7 +9,7 @@ In Tera Term, you will see a Linux window boot open, and you can log in via user
 
 You can then enter the following commands to execute the Smart Camera Application after you see the following window appear:
 
-<img src="/images/som_console.JPG" width=500 height =100>
+<img src="/images/som_console.JPG" width=500 height=200>
 
 After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil lisapps` to see what applications exist. 
 
@@ -22,7 +22,7 @@ smartcam_aa1 --mipi 0 -W 1920 -H 1080
 
 If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
 
-<img src="/images/som_aa1.png" width=100 height =100>
+<img src="/images/som_aa1.png" width=300 height =300>
 
 To exit out of the AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
