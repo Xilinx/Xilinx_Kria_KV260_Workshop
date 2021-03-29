@@ -4,12 +4,6 @@ After the boot, you will observe the green heart LED flashing along the SOM fan 
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
-Open a XSDB or XSCT console and enter the following commands:
-```
-xsct% connect
-xsct% source <path>/som_bootmode_EA0-BSP.tcl
-xsct% boot_sd
-```
 
 In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
 
@@ -17,7 +11,7 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 <img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
-After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil.py lisapps` to see what applications exist. 
+After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil lisapps` to see what applications exist. 
 
 ## AA1: Smart camera
 After the Linux window booted, we will connect to the AA1 via the following commands. 
