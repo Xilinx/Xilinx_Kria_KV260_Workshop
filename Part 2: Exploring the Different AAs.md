@@ -22,7 +22,7 @@ smartcam_aa1 --mipi 0 -W 1920 -H 1080
 
 If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
 
-<img src="/images/som_aa1.png" width=300 height =300>
+<img src="/images/som_aa1.png" width=150 height =150>
 
 To exit out of the AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
