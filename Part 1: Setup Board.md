@@ -35,8 +35,14 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 ## 2. Board Set up
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
--	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. The supported cameras are listed below (from UG 1089):
+-	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. 
+-	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
 
+You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
+
+<img src="/images/som-connections-600x600.gif" width=600 height =600>
+
+You can also use the following cameras (from UG 1089):
 
 |Accelerated Application |Peripheral |Part Number|
 | ------------- | ------------- | ------------- |
@@ -44,14 +50,6 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 |Smart camera AA1 | USB camera| Logitech BRIO|
 |Smart camera AA1 | Audio Codec I2S2 PMOD (J2)| Digilent PMOD SKU 410-379|
 |Defect detection AA4| IAS camera sensor ISP interface (J7)| OnSemi AR0144 sensor module. Avnet part number: CAV10-000A|
-
--	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
-
-You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
-
-<img src="/images/som-connections-600x600.gif" width=600 height =600>
- 
-
  
 ## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
