@@ -49,7 +49,7 @@ In addition, you will need to download the FTDI virtual COM port driver as it co
 
 You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
 
-<img src="/images/som-connections-600x600.gif" width=100 height =100>
+<img src="/images/som-connections-600x600.gif" width=600 height =600>
  
 
  
