@@ -12,6 +12,9 @@ You can click on the following links for [Linux](https://github.com/Xilinx/Xilin
 - Ethernet cable
 - HDMI/DI cable (optional) to connect a monitor display
 
+You can purchase all these items with the [KV260 Basic Accessory Pack](https://www.author.uat.xilinx.com/products/som/kria/kv260-vision-starter-kit/basic-accessory-pack.html)
+
+
 ## Xilinx Tools needed to Boot via SD card
 You will need the following tools installed on your computer or access via [AWS]() in order to boot via SD card
 - Vivado/Vitis for xsdb or xsct console
