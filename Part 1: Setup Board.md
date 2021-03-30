@@ -17,9 +17,9 @@ You can purchase all these items with the [KV260 Basic Accessory Pack](https://w
 
 ## Xilinx Tools needed to Boot via SD card
 You will need the following tools installed on your computer or access via [AWS]() in order to boot via SD card
-- Vivado/Vitis for xsdb or xsct console
-- PetaLinux (2020.2 or later)
 - [Putty](https://www.putty.org/) and or [Tera Term](https://ttssh2.osdn.jp/index.html.en) Terminal (click on the link to download an application terminal)
+- (Optionally) Vivado & Vitis to update hardware or model
+- (Optionally) Petalinux (2020.2 or later)
 
 ## 1. Write to SD card
 If you already have an SD card with the image pre-installed, you may skip this step. 
