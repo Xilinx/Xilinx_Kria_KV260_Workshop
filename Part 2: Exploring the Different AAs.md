@@ -43,21 +43,33 @@ To load the AI box, run the following command
 xmutil loadapp kv260-aa2
 ```
 Then you will need to run the following command to enable AA2 for a 4K display monitor.
-`sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:3840x2160@NV16`
+```
+sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:3840x2160@NV16
+```
 
 There are multiple ways you can set up AI box application, depending on the number of channels you want to enable. For this workshop, we will explore one channel and one process. 
 
 You will need to setup a RTSP server link to be an input for the application. If you don not have a RTSP server on hand, smartcam_aa1 application can be used as the RTSP server on the AA2 platform, with -n option, which turn off the server side AI inference.
 
-Use the following command to perform this action: `smartcam_aa1 -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &`
+Use the following command to perform this action: 
+```
+smartcam_aa1 -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &
+```
 
-Running this command will output the following: `stream ready at: rtsp://192.168.29.11:5000/test`
+Running this command will output the following: 
+```
+stream ready at: rtsp://192.168.29.11:5000/test
+```
 
 This will be the link to observe the output on the 4K monitor with the following command:
-`sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0`
+```
+sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0
+```
 
-
-To exit out of the AA2, use the following command: `xmutil unloadapp kv260-aa2`
+To exit out of the AA2, use the following command: 
+```
+xmutil unloadapp kv260-aa2
+```
 
 ## AA4: Defect detection
 ```
@@ -65,17 +77,32 @@ xmutil loadapp kv260-aa4
 ```
 
 There are multiple options for live playback. You can test any of the following methods below. To stop the defect-detect application, use CTRL-C in the command line.
- - For Normal mode: `defect-detect -w 1280 -h 800 -r 60 -f 0 -d 0 -m /dev/media0`
- - For Demo mode: ` defect-detect -w 1280 -h 800 -r 60 -f 0 -d 1 -m /dev/media0`
- - For File playback: `defect-detect -w 1280 -h 800 -r 60 -f 1 -i input.yuv -x raw.yuv -y pre_pros.yuv -z final.yuv`
+ - For Normal mode: 
+   ```
+   defect-detect -w 1280 -h 800 -r 60 -f 0 -d 0 -m /dev/media0
+   ```
+ - For Demo mode: 
+   ```
+   defect-detect -w 1280 -h 800 -r 60 -f 0 -d 1 -m /dev/media0
+   ```
+ - For File playback: 
+ ```
+ defect-detect -w 1280 -h 800 -r 60 -f 1 -i input.yuv -x raw.yuv -y pre_pros.yuv -z final.yuv
+ ```
 
-To exit out of the AA4, use the following command: `xmutil unloadapp kv260-aa4`
+To exit out of the AA4, use the following command: 
+```
+xmutil unloadapp kv260-aa4
+```
 
 ## AA5: License plate recognition
 ```
 xmutil loadapp kv260-aa5
 ```
-To exit out of the AA5, use the following command: `xmutil unloadapp kv260-aa5`
+To exit out of the AA5, use the following command: 
+```
+xmutil unloadapp kv260-aa5
+```
 
 Return to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
 
