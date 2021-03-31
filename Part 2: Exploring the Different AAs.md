@@ -11,16 +11,21 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 <img src="/images/som_console.JPG" width=500 height=150>
 
-After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil lisapps` to see what applications exist. 
+After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil listapps` to see what applications exist. 
+**image of xmutil listapps**
+<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
 
-## AA1: Smart camera
-After the Linux window booted, we will connect to the AA1 via the following commands. 
+
+## AA1: Smart Camera
+This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
+
+You can connect to the AA1 via the following commands. 
 ```
 xmutil loadapp kv260-aa1
 smartcam_aa1 --mipi 0 -W 1920 -H 1080 
 ```
 
-If you have an HDMI or DP monitor connected to the board, you will see the following image appear on your screen.
+If you have an HDMI or DP monitor connected to the board, you will see a similar image appear on your screen.
 
 <img src="/images/som_aa1.png" width=400 height =200>
 
