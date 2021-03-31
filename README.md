@@ -8,8 +8,6 @@ The KV 260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-vola
 ## Part 1: Setup Board
 In this part, you will connect the cables, camera, and SD card to the board and boot the SOM via pre-installed image. 
 
-<img src="/images/som_board2.JPG" width=200 height =200>
-
 Go to Part 1: 
  - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
  - [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
@@ -26,13 +24,11 @@ In this part, you will be diving deeper into AA1, the Smart Camera application.
 
 [Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
-<img src="/images/som_aa1.png" width=300 height =200>
-
 
 ## Additional Resources
-Please refer to any of the links below to learn more about the SOM carrier card, how to connect via Amazon Web Services (AWS), or go to Xilinx's homepage.
+Please refer to the links below to learn more about the SOM carrier card, how to connect via Amazon Web Services (AWS), or go to Xilinx's homepage.
 
- - Xilinx SOM platform enables a number of accelerated applications. These can be dynamically installed on the SOM board. You can learn about the Accelerated Applications or AAs [here](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
+ - More information on the Accelerated Applications [AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Accelerated%20Applications.md)
  - If you have any questions or issues, you can refer to the [FAQs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md)
  - Learn more about the [SOM Board]() and any [technical documents]() or [datasheets]()
  - Learn more about the [Production SOM]()
