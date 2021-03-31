@@ -26,7 +26,7 @@ In this part, you will be diving deeper into AA1, the Smart Camera application.
 
 [Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
-<img src="/images/som_aa1.png" width=200 height =200>
+<img src="/images/som_aa1.png" width=300 height =200>
 
 
 ## Additional Resources
