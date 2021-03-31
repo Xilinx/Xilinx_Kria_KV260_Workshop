@@ -4,6 +4,9 @@ If you are using a **Windows** environment, you can use these instructions for y
 You can click on the following links for [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
 
 # Part 1: Setup Board
+<img src="/images/som_board_accessories.jpg" width=400 height =400>
+
+
 ## Items you’ll need to provide to bring up the lab
 - Barrel Jack Power supply (12V,3A)
 - MicroSD card [32GB UHS-1]
