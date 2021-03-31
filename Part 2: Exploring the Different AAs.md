@@ -30,7 +30,8 @@ If you have an HDMI or DP monitor connected to the board, you will see a similar
 
 <img src="/images/som_aa1.png" width=400 height =200>
 
-To exit out of the AA1, use the following command: `xmutil unloadapp kv260-aa1`
+To exit out of the AA1, use the following command: 
+```xmutil unloadapp kv260-aa1```
 
 ## AA2: AI box
 This applicaiton supports multi-stream IP camera RTSP inputs for supporting **pedestrian detection and re-identification (ReID)**. The network model is refinedet_pruned_0_96. The models in AI box can be dynamically loaded with the inference information displayed to a 4K monitor. The application can support up to 4 multiple streams or channels of 1080p videos running simultaneously. 
