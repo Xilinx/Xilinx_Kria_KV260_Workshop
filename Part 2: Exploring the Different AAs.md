@@ -42,7 +42,9 @@ You will need to setup a RTSP server link to be an input for the application. If
 
 Use the following command to perform this action: `smartcam_aa1 -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &`
 
-The following command will run the AI box application with one channel and one process. 
+Running this command will output the following: `stream ready at: rtsp://192.168.29.11:5000/test`
+
+This will be the link to observe the output on the 4K monitor with the following command:
 `sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0`
 
 
