@@ -60,6 +60,12 @@ To exit out of the AA2, use the following command: `xmutil unloadapp kv260-aa2`
 ```
 xmutil loadapp kv260-aa4
 ```
+
+There are multiple options for live playback. You can test any of the following methods below. To stop the defect-detect application, use CTRL-C in the command line.
+ - For Normal mode: `defect-detect -w 1280 -h 800 -r 60 -f 0 -d 0 -m /dev/media0`
+ - For Demo mode: ` defect-detect -w 1280 -h 800 -r 60 -f 0 -d 1 -m /dev/media0`
+ - For File playback: `defect-detect -w 1280 -h 800 -r 60 -f 1 -i input.yuv -x raw.yuv -y pre_pros.yuv -z final.yuv`
+
 To exit out of the AA4, use the following command: `xmutil unloadapp kv260-aa4`
 
 ## AA5: License plate recognition
