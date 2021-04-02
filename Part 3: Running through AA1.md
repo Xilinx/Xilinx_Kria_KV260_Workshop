@@ -31,6 +31,9 @@ When asked, enter the width and height as the 1st and 2nd parameter. The default
 To verify
 
 ### Edit content below
+
+
+
 Let’s look at these four scripts provided along with this application. 
 21.	View the example scripts by changing the directory to the /opt/xilinx/bin directory:
 cd /opt/xilinx/bin
