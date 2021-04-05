@@ -2,7 +2,7 @@
 
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
-<img src="/images/IMG_8592.MOV" width=100 height =100>
+<img src="/images/led.gif" width=100 height =100>
 
 
 In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
