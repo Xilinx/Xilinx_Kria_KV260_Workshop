@@ -13,8 +13,7 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil listapps` to see what applications exist. 
 
-**image of xmutil listapps**
-<img src="/images/xmutil_list_apps.JPG" width=100 height =100>
+<img src="/images/xmutil_list_apps.JPG" width=600 height =600>
 
 
 ## AA1: Smart Camera
