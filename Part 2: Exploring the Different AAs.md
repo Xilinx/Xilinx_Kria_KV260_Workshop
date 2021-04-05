@@ -2,7 +2,7 @@
 
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
-<img src="/images/led.gif" width= 400 height =400>
+<img src="/images/led.gif" width= 300 height =300>
 
 
 In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
@@ -13,7 +13,7 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil listapps` to see what applications exist. 
 
-<img src="/images/xmutil_list_apps.JPG" width=600 height =300>
+<img src="/images/xmutil_list_apps.JPG" width=500 height =150>
 
 
 ## AA1: Smart Camera
