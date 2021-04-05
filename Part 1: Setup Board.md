@@ -65,7 +65,7 @@ After opening Tera Term or Putty, select the COM port listed first (i.e. select 
 
 Power on the SOM board by connecting the power supply into J12 and into the wall outlet. Observe the LED’s illuminating to indicate power. 
 
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
+<img src="/images/IMG_8591.jpg" width=500 height =500>
 
 Plug USB cable connected into J4 into your local computer and proceed to the next part below:
 
