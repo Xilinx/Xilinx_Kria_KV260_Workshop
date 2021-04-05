@@ -26,5 +26,5 @@ Platform Management utility (xmutil) commands help configure and work the SOM bo
 | Issue  | Resolution |
 | ------------- | ------------- |
 | There is a heartbeat LED active, but UART isn't responding.  |Verify that your machine has a FTDI driver installed and that the terminal is connected to the correct COM port.  |
-| Content Cell  | Content Cell  |
+| "Device is not ready" | After invoking the command xmutil loadapp to load firmware, it needs several seconds for the whole firmware to be ready. If you invoke the smartcam application before it is ready, it may report errors about devices readiness.  |
 
