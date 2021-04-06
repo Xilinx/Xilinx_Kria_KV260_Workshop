@@ -25,8 +25,8 @@ You will enter in the host name, username, and password as provided by your work
 
 You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
 
-## Linux 
-For linux, you will use scp
+## Linux & Mac
+For linux & mac, you will use scp
 
 enter the following command into the terminal: 
 ```
