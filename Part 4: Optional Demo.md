@@ -4,10 +4,10 @@ Depending on time, you may complete this demo at home.
 
 As you have seen that there are three AI models provided here via –aitask command line option; facedetect (densebox_320_320), refinedet (refinedet_pruned_0_96), ssd (ssd_adas_pruned_0_95) etc. But the customization can be made to use other Vitis AI models of the same class or use the retrained models by the users.
 
-Part A: (30 minutes)
+## Part A: (30 minutes)
 Here are some compiled files needed to update the models
 
-Part B: (1-2 hours)
+## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
 
 Jump to [summary](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Takeaways.md) slide
