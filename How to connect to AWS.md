@@ -26,6 +26,11 @@ You will enter in the host name, username, and password as provided by your work
 You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
 
 ## Linux 
+For linux, you will use scp
 
-Install Remmina for Remote Destkop
-https://www.tecmint.com/remmina-remote-desktop-sharing-and-ssh-client/
+enter the following command into the terminal: 
+```
+scp [username]@[IP_address]:[path to file] [path toe destination]
+```
+
+The user name and IP address will be provided by the workshop coordinator
