@@ -66,6 +66,9 @@ smartcam_aa1 --mipi -W 1920 -H 1080 --target file >/dev/null 2>&1
 ```
 This will take input from a IAS sensor (MIPI) and output the detection to a file. 
 
+You can refer to the following table to explore more features within AA1: 
+[AA1 features & commands](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Additional%20AA1%20Features.md)
+
 ### Exit out of AA1
 To exit out of AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
