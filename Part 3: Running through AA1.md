@@ -18,68 +18,56 @@ You will enter this URL in order to access the notebook.
 
 ## Exploring different features of AA1
 
-There are many applications and features to utilize and explore through AA1. We will dive into each section: 
+There are many applications and features to utilize and explore through AA1. You can source any of the scripts below and observe the output which performs face detection and cars, bicycles, and person detection for ADAS using smart camera application running on starter kit. 
 
-### MIPI DP display
-Before continuing ensure that you are connected to a monitor via Display Port and not HDMI
-
-Utilize the following command: `sudo 02.mipi-dp.sh`
-This will play a video with the captured detection results onto the monitor.
-
-When asked, enter the width and height as the 1st and 2nd parameter. The default value will be 1920 and 1080 respectively.
-
-To verify
-
-### Edit content below
-
-
-
-Let’s look at these four scripts provided along with this application. 
-21.	View the example scripts by changing the directory to the /opt/xilinx/bin directory:
+The scripts are located in the following directory `/opt/xilinx/bin`. Use the following commands to access and see the directory:
+```
 cd /opt/xilinx/bin
 ls -ll
-You will see different shell scripts that are available. 
-22.	Source the available scripts and observe the output which performs the face detection and cars, bicycles and person detection for ADAS using smart camera application running on starter kit.
-•	MIPI to RTSP server – "01.mipi-rtsp.sh" – 
-o	This script starts the RTSP server for MIPI captured images. The script accepts ${width} ${height} as the 1st and 2nd parameter, default value being 1920 x 1080.
-o	Source the script and observe the output.
-sudo ./01.mipi-rtsp.sh 
-Here, you should be able to see the images the camera is capturing on the ffplay window, and when there's face captured by camera, there should be blue box drawn around the face, and the box should follow the movement of the face. 
+```
 
-•	MIPI to DisplayPort (using HDMI) – "02.mipi-dp.sh" – 
-o	This script plays the captured video with detection results on the monitor. The script accepts ${width} ${height} as 1st and 2nd parameter, default value being 1920 x 1080.
-o	Source the script and observe the output.
-sudo ./02.mipi-dp.sh
-Here, you should be able to see the images the camera is capturing on the monitor connected to the board, and when there's face captured by camera, there should be blue box drawn around the face, and the box should follow the movement of the face.
+### MIPI RTSP server
+1. Type the command `sudo 01.mipi-rtsp.sh` to start rtsp server for MIPI captured images.
 
-•	File to File – "03.file-to-file.sh" – 
-o	This script reads in the sample video file named walking-people.nv12.30fps.1080p.h264 located at /usr/share/somapp/movies/AA1 directory, performs the face detection and generates the output video, and save it as ./out.h264 file. 
-o	Source the script and observe the output.
-sudo ./03.file-to-file.sh
-Here, the input video file is "/usr/share/somapp/movies/AA1/walking-people.nv12.30fps.1080p.h264" and the generated output file is "./out.h264" that can be played using any media player, e.g. VLC, ffplay.
-You should be able to see the face detection happening in the output video file as mentioned above, while there are no such boxes around the face in the input video file.
+2. The above command will invoke commands for width and height of the display as the 1st and 2nd parameter. If you press "enter", the default parameters will be 1920 x 1080.
 
-•	File to DisplayPort – "04.file-ssd-dp.sh" –
-o	This script reads in the sample video file named Road-Adas.nv12.30fps.1080p.h264 located at /usr/share/somapp/movies/AA1 directory, performs the car, bicycles and person detection and displays the output video on to the monitor. 
-o	Source the script and observe the output.
-sudo ./04.file-ssd-dp.sh
-Here you should be able to see a video of highway driving, with detection of vehicles in a bounding box.
+3. After running the script, the following message will appear:
+```
+stream ready at:
+rtsp://boardip:port/test
+```
+4.  Run "ffplay rtsp://boardip:port/test" on the PC to receive the rtsp stream. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
 
-Apart from this, with the command line, you can also mix and match your input and output combinations and run the application. For example:
-23.	Run the following command which will take the input from IAS sensor (MIPI), apply the detection and output it to the file. 
+### MIPI DP display:
+1. Check that your monitor (HDMI or DP) is connected
+2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. 
+3. The above command will invoke commands for width and height of the display as the 1st and 2nd parameter. If you press "enter", the default parameters will be 1920 x 1080.
+4. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
+
+### File to File
+1. Type the command `sudo 03.file-to-file.sh`
+2. Identify the 1st argument from the script output as a path to the video file as shown below: 
+
+3. This video output can be used for a face detection demo, generating a video with detection bounding box, etc.
+4. You can play the generated ./out.h264 video file with a media player of your choosing. The output video file will show blue boxes around the faces of people that will follow any movement on the camera.
+
+### File to DP
+1. Type the command `sudo 04.file-ssd-dp.sh`
+2. Identify the 1st argument from the script output as a path to the video file as shown below: 
+
+3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
+4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
+
+### Mix and match
+1. In the command line, you can mix and match input & output combinations to run the application. 
+2. For example, you can use the following command: 
+```
 smartcam_aa1 --mipi -W 1920 -H 1080 --target file >/dev/null 2>&1
+```
+This will take input from a IAS sensor (MIPI) and output the detection to a file. 
 
-Customize the AI models used in the application: 
-As you have seen that there are three AI models provided here via –aitask command line option; facedetect (densebox_320_320), refinedet (refinedet_pruned_0_96), ssd (ssd_adas_pruned_0_95) etc. But the customization can be made to use other Vitis AI models of the same class or use the retrained models by the users.
-
-
-
-### end new content
-
-
-
-
-To exit out of the AA, use the following command: `xmutil unloadapp kv260-aa1`
+### Exit out of AA1
+To exit out of AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
 You can use `xmutil lisapps` to see what other applications exist. 
 
