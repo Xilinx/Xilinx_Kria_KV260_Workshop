@@ -8,7 +8,7 @@ You can download one of the demo videos to test this feature:
  - Video 1: [Facedet / RefineDet AI Task](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
  - Video 2: [ADAS SSD AI Task](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
 
-Then you can enter the following command into the Linux console: `ffmpeg -i input-video.mp4 -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264`
+Then, you can transcode a MP4 file to a H264 file which is one supported input format. Afterwards, upload or copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
 
 ## Using Jupyter Notebook 
 You can use a web-browser notebook to interact with the SOM board.
