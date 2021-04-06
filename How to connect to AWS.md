@@ -32,5 +32,6 @@ enter the following command into the terminal:
 ```
 scp [username]@[IP_address]:[path to file] [path toe destination]
 ```
+You will need to enter the password to access the files.
 
 The user name and IP address will be provided by the workshop coordinator
