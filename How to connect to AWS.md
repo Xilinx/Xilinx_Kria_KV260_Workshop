@@ -11,7 +11,7 @@ To access it via Putty, you will need to download the following tools beforehand
 - (puTTY)[https://www.chiark.greenend.org.uk/~sgtatham/putty/]
 
 
-
+## Windows
 You want to download WinSCP for Windows file transfer
 
 [WinSCP Downloads](https://winscp.net/eng/download.php)
@@ -25,3 +25,7 @@ You will enter in the host name, username, and password as provided by your work
 
 You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
 
+## Linux 
+
+Install Remmina for Remote Destkop
+https://www.tecmint.com/remmina-remote-desktop-sharing-and-ssh-client/
