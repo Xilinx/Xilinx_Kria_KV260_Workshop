@@ -78,9 +78,8 @@ If you need to set up a static address within your host machine, you can follow 
 Congratulations on completing this part of the workshop. You can jump to the [summary](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Takeaways.md) page for some closing remarks about the workshop. 
 
 If you have time, you may jump ahead to [Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) or you may take it home to work on on your own.
-
-
-
+<br>
+<br>
 Return to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
