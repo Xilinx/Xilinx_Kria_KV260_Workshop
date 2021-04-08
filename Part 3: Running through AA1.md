@@ -16,6 +16,20 @@ To find the notebook URL, enter the following command in the Linux console: `sud
 
 You will enter this URL in order to access the notebook. 
 
+## Baseline measurements
+There are a number of tests you can perform with the smart camera:
+
+1. Throughput Measurement (Frames per Second)
+Enter the following command to display the FPS in the terminal. In this case, it should be around 49 FPS. 
+```
+sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect -R
+```
+2. Power Measurement
+Enter the following command to view how much power is being consumed via the smart camera. This command is run in the background. 
+```
+sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect &
+```
+
 ## Exploring different features of AA1
 
 There are many applications and features to utilize and explore through AA1. You can source any of the scripts below and observe the output which performs face detection and cars, bicycles, and person detection for ADAS using smart camera application running on starter kit. 
