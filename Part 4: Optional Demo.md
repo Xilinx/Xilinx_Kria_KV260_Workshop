@@ -9,6 +9,11 @@ There are other AI models that you can use as listed [here](https://www.xilinx.c
 ## Part A: (30 minutes)
 Here are some compiled files needed to update the models
 
+```
+cd Vitis-AI
+./docker_run.sh xilinx/vitis-ai-cpu:latest
+```
+
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
 
