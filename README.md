@@ -24,6 +24,8 @@ In this part, you will be diving deeper into AA1, the Smart Camera application.
 
 [Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
+## Part 4: Optional Demo
+[Go to Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md)
 
 ## Additional Resources
 Please refer to the links below to learn more about the SOM carrier card, how to connect via Amazon Web Services (AWS), or go to Xilinx's homepage.
