@@ -1,4 +1,4 @@
-# Part 2: Exploring the Different AAs
+# Part 2: Exploring the Different AAs (30 - 45 minutes)
 
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
