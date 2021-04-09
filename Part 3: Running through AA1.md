@@ -91,10 +91,11 @@ You can use `xmutil lisapps` to see what other applications exist.
 If you need to set up a static address within your host machine, you can follow the instructions at this link:
 [Setting up a private network](https://xilinx.github.io/vck190-base-trd/build/html/run.html#setting-a-private-network) 
 
-## Conclusion
-Congratulations on completing this part of the workshop. You can jump to the [summary](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Takeaways.md) page for some closing remarks about the workshop. 
-
+## Jump to Part 4 (Optional)
 If you have time, you may jump ahead to [Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) or you may take it home to work on on your own.
+
+## End of Part 3
+Congratulations on completing this part of the workshop. You can jump to the [summary](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Takeaways.md) page for some closing remarks about the workshop. 
 
 <br>
 <br>
