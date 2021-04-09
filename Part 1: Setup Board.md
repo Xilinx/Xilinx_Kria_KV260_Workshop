@@ -3,7 +3,7 @@ If you are using a **Windows** environment, you can use these instructions for y
 
 You can click on the following links for [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md) and [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md) enviroments. 
 
-# Part 1: Setup Board (15 -25 minutes)
+# Part 1: Setup Board (15 - 25 minutes)
 <img src="/images/Som_board_accessories.jpg" width=500 height =400>
 
 
