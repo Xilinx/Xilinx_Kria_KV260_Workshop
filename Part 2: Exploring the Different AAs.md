@@ -21,6 +21,7 @@ This application supports camera and sensor input options with accelerated Machi
 
 You can connect to the AA1 via the following commands. 
 ```
+sudo xmutil unloadapp
 xmutil loadapp kv260-aa1
 smartcam_aa1 --mipi 0 -W 1920 -H 1080 
 ```
@@ -29,16 +30,12 @@ If you have an HDMI or DP monitor connected to the board, you will see a similar
 
 <img src="/images/som_aa1.png" width=400 height =200>
 
-To exit out of the AA1, use the following command: 
-```
-xmutil unloadapp kv260-aa1
-```
-
 ## AA2: AI box
 This applicaiton supports multi-stream IP camera RTSP inputs for supporting **pedestrian detection and re-identification (ReID)**. The network model is refinedet_pruned_0_96. The models in AI box can be dynamically loaded with the inference information displayed to a 4K monitor. The application can support up to 4 multiple streams or channels of 1080p videos running simultaneously. 
 
 To load the AI box, run the following command
 ```
+sudo xmutil unloadapp
 xmutil loadapp kv260-aa2
 ```
 Then you will need to run the following command to enable AA2 for a 4K display monitor.
@@ -65,13 +62,10 @@ This will be the link to observe the output on the 4K monitor with the following
 sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0
 ```
 
-To exit out of the AA2, use the following command: 
-```
-xmutil unloadapp kv260-aa2
-```
 
 ## AA4: Defect detection (placeholder)
 ```
+sudo xmutil unloadapp
 xmutil loadapp kv260-aa4
 ```
 
@@ -88,20 +82,13 @@ There are multiple options for live playback. You can test any of the following 
  ```
  defect-detect -w 1280 -h 800 -r 60 -f 1 -i input.yuv -x raw.yuv -y pre_pros.yuv -z final.yuv
  ```
-
-To exit out of the AA4, use the following command: 
-```
-xmutil unloadapp kv260-aa4
-```
-
+ 
 ## AA5: License plate recognition (place holder)
 ```
+sudo xmutil unloadapp
 xmutil loadapp kv260-aa5
 ```
-To exit out of the AA5, use the following command: 
-```
-xmutil unloadapp kv260-aa5
-```
+
 ## Jump to Part 3
 
 Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
