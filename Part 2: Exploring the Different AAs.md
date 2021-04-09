@@ -70,7 +70,7 @@ To exit out of the AA2, use the following command:
 xmutil unloadapp kv260-aa2
 ```
 
-## AA4: Defect detection
+## AA4: Defect detection (placeholder)
 ```
 xmutil loadapp kv260-aa4
 ```
@@ -94,7 +94,7 @@ To exit out of the AA4, use the following command:
 xmutil unloadapp kv260-aa4
 ```
 
-## AA5: License plate recognition
+## AA5: License plate recognition (place holder)
 ```
 xmutil loadapp kv260-aa5
 ```
