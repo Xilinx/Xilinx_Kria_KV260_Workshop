@@ -102,9 +102,10 @@ To exit out of the AA5, use the following command:
 ```
 xmutil unloadapp kv260-aa5
 ```
-
-Return to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
+## Jump to Part 3
 
 Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+
+Return to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
