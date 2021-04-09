@@ -69,6 +69,7 @@ Power on the SOM board by connecting the power supply into J12 and into the wall
 
 Plug USB cable connected into J4 into your local computer and proceed to the next part below:
 
+## Jump to Part 2
 Go to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
