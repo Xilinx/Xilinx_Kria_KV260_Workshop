@@ -1,11 +1,12 @@
 # Takeaways
+We've explored a lot of features on the SOM board.
 
-We explored a lot features of the SOM carrier card.
-
-Here are some important highlights from the lab:
+Here are some important highlights from the workshop:
 
  - Ease-of-use SOM card
+ - Rapid loading and unloading of Accelerated Applications
  - Multiple use cases for the SOM through the Accelerated Applications
+ - Ability to load new models to use for your applications
  
 You can go to the following links to find more information:
 
