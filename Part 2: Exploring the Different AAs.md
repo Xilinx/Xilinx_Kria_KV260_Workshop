@@ -43,7 +43,7 @@ xmutil loadapp kv260-aa2
 ```
 Then you will need to run the following command to enable AA2 for a 4K display monitor.
 ```
-sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:3840x2160@NV16
+sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:1920x1080@NV16 # Note 1920x1080 will depend on your monitor size.
 ```
 
 There are multiple ways you can set up AI box application, depending on the number of channels you want to enable. For this workshop, we will explore one channel and one process. 
