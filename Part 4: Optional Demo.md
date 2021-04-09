@@ -4,6 +4,8 @@ Depending on time, you may complete this demo at home.
 
 As you have seen that there are three AI models provided here via –aitask command line option; facedetect (densebox_320_320), refinedet (refinedet_pruned_0_96), ssd (ssd_adas_pruned_0_95) etc. But the customization can be made to use other Vitis AI models of the same class or use the retrained models by the users.
 
+There are other AI models that you can use as listed [here](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html): 
+
 ## Part A: (30 minutes)
 Here are some compiled files needed to update the models
 
