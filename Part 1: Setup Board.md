@@ -7,6 +7,8 @@ You can click on the following links for [Linux](https://github.com/Xilinx/Xilin
 <img src="/images/Som_board_accessories.jpg" width=500 height =400>
 
 
+
+
 ## Items you’ll need to provide to bring up the lab
 - Barrel Jack Power supply (12V,3A)
 - MicroSD card [32GB UHS-1]
