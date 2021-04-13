@@ -1,3 +1,6 @@
+# Additional AA1 Features
+The list below details the commands that can be used for AA1.
+
 ```
 smartcam [OPTION?] - Application for face detection on SOM board of Xilinx.
 
