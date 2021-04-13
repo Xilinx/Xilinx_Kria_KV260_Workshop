@@ -1,6 +1,7 @@
 # Additional AA1 Features
 The list below details the commands that can be used for AA1.
 
+## Application options
 ```
 smartcam [OPTION?] - Application for face detection on SOM board of Xilinx.
 
@@ -46,35 +47,37 @@ smartcam [OPTION?] - Application for face detection on SOM board of Xilinx.
  -s, --screenfps            display fps on screen, notic this will cause perfermance degradation.
 
  --ROI-off                  turn off ROI (Region-of-Interest)
-Examples of supported combinations sorted by input are outlined below.
-If using the command line to invoke the smartcam, stop the process via CTLR-C prior to starting the next instance.
+ ``` 
 
-MIPI Input (IAS sensor input):
+## Command Combinations
+You can also use supported combinations below.
+If you are using the command line, stop the process via CTRL-C prior to starting another instance. 
 
-output: RTSP
+1. MIPI Input (IAS sensor input):
 
-sudo smartcam --mipi -W 1920 -H 1080 --target rtsp
-
-output: RTSP with audio
-
+ - output: RTSP
+  ```
+  sudo smartcam --mipi -W 1920 -H 1080 --target rtsp
+  ```
+- output: RTSP with audio
+ ```
 sudo smartcam --mipi -W 1920 -H 1080 --target rtsp --audio
-
-output: DP
-
+```
+-output: DP
+```
 sudo smartcam --mipi -W 1920 -H 1080 --target dp
-
-output: file
-
+```
+-output: file
+```
 sudo smartcam --mipi -W 1920 -H 1080 --target file
+```
+-input file (file on file system):
+  - Note You must update the command to the specific file desired as the input source.
 
-input file (file on file system):
-
-Note You must update the command to the specific file desired as the input source.
-
-output: RTSP
-
+ - output: RTSP
+```
 sudo smartcam --file ./test.h264 -i h264 -W 1920 -H 1080 -r 30 --target rtsp
-
+```
 output: DP
 
 sudo smartcam --file ./test.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp
@@ -98,4 +101,4 @@ sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target dp
 output: file
 
 sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target file
-```
+
