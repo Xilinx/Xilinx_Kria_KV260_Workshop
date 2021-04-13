@@ -3,7 +3,7 @@ The list below details the commands that can be used for AA1.
 
 [Application options](#-Application-options)
 
-[Command Combinations](#-Command Combinations)
+[Command Combinations](#-Command-Combinations)
 
 ## Application options
 ```
