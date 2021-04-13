@@ -3,7 +3,7 @@ The list below details the commands that can be used for AA1.
 
 [Application options](##Application-options)
 
-[Command Combinations](##Command-combinations)
+[Command Combinations](#Command-combinations)
 
 ## Application options
 ```
@@ -53,7 +53,7 @@ smartcam [OPTION?] - Application for face detection on SOM board of Xilinx.
  --ROI-off                  turn off ROI (Region-of-Interest)
  ``` 
 
-## Command Combinations
+# Command Combinations
 You can also use supported combinations below.
 If you are using the command line, stop the process via CTRL-C prior to starting another instance. 
 
