@@ -1,9 +1,7 @@
 This document outlines important questions and solutions you may need when working with the SOM board
 
-**Include hyperlinks to jump to item on table contents**
-
-
 [Xmutil Commands](#Xmutil-Commands)
+
 [Potential Issues and Resolutions](#Potential-Issues-and-Resolutions)
 
 
