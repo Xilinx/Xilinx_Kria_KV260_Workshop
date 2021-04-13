@@ -1,3 +1,4 @@
+```
 smartcam [OPTION?] - Application for face detection on SOM board of Xilinx.
 
  Help Options:
@@ -94,3 +95,4 @@ sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target dp
 output: file
 
 sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target file
+```
