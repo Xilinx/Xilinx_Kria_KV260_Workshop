@@ -31,11 +31,16 @@ sudo dnf install packagegroup-kv260-defect-detection-aa4.noarch
 ## AA1: Smart Camera
 This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
 
-You can connect to the AA1 via the following commands. 
+You can connect to the AA1 via the following commands if you have the AR 1335 camera connected.
 ```
 sudo xmutil unloadapp
 xmutil loadapp kv260-aa1
 smartcam_aa1 --mipi 0 -W 1920 -H 1080 
+```
+
+Otherwise you can replace the `--mipi` command with 
+```
+smartcam_aa1 --usb 0 -W 1920 -H 1080
 ```
 
 If you have an HDMI or DP monitor connected to the board, you will see a similar image appear on your screen.
