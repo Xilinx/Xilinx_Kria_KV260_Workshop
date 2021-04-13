@@ -2,8 +2,14 @@ This document outlines important questions and solutions you may need when worki
 
 **Include hyperlinks to jump to item on table contents**
 
+[Potential Issues & Resolutions](#Potential-Issues-&-Resolutions)
+
+[Xmutil Commands](#Xmutil-Commands)
+
+
 Platform Management utility (xmutil) commands help configure and work the SOM board. You can refer to the table below for the command and description. This table comes from UG 1089:
 
+# Xmutil Commands
 | Utility Function  | Description |
 | ------------- | ------------- |
 | xmutil boardid|Reads all board EEPROM contents. Prints information summary to command line interface.  |
@@ -23,6 +29,7 @@ Platform Management utility (xmutil) commands help configure and work the SOM bo
 
 <br><br>
 
+# Potential Issues & Resolutions
 | Issue  | Resolution |
 | ------------- | ------------- |
 | There is a heartbeat LED active, but UART isn't responding.  |Verify that your machine has a FTDI driver installed and that the terminal is connected to the correct COM port.  |
