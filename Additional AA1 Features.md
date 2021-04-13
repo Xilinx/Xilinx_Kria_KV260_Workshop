@@ -63,42 +63,41 @@ If you are using the command line, stop the process via CTRL-C prior to starting
  ```
 sudo smartcam --mipi -W 1920 -H 1080 --target rtsp --audio
 ```
--output: DP
+- output: DP
 ```
 sudo smartcam --mipi -W 1920 -H 1080 --target dp
 ```
--output: file
+- output: file
 ```
 sudo smartcam --mipi -W 1920 -H 1080 --target file
 ```
--input file (file on file system):
-  - Note You must update the command to the specific file desired as the input source.
+2. input file (file on file system):
+   Note You must update the command to the specific file desired as the input source.
 
  - output: RTSP
 ```
 sudo smartcam --file ./test.h264 -i h264 -W 1920 -H 1080 -r 30 --target rtsp
 ```
-output: DP
-
+ - output: DP
+```
 sudo smartcam --file ./test.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp
-
-output: file
-
+```
+- output: file
+```
 sudo smartcam --file ./test.h264 -i h264 -W 1920 -H 1080 -r 30 --target file
+```
+3.  USB (USB webcam):
+    Note You must ensure the width/height/framerate defined are supported by your USB camera.
 
-input USB (USB webcam):
-
-Note You must ensure the width/height/framerate defined are supported by your USB camera.
-
-output: RTSP
-
+- output: RTSP
+```
 sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target rtsp
-
-output: DP
-
+```
+- output: DP
+```
 sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target dp
-
-output: file
-
+```
+- output: file
+```
 sudo smartcam --usb 1 -W 1920 -H 1080 -r 30 --target file
-
+```
