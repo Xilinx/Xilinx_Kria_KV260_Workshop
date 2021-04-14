@@ -62,7 +62,7 @@ You will need to identify the connected USB cable. Within the same Linux termina
 
 Four COM ports should be enumerated. The **3rd** numbered COM port corresponds to the UART.
 
-You will configure the settings using the following command: `sudo putty /dev/ttyUSB2 -serial -sercfg 115200,8,n,1N`
+You will configure the settings using the following command: `sudo putty /dev/ttyUSB2 -serial -sercfg 115200,8,n,1,N`
 
 This corresponds to the corresponding format:
 -	Baud rate = 115200
