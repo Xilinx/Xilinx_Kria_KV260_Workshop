@@ -26,7 +26,7 @@ sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i
 ```
 You will see an image like the one below:
 
-<img src="/images/SOM_FPS.JPG" width= 300 height =300>
+<img src="/images/SOM_FPS.JPG">
 
 2. Power Measurement
 Enter the following command to view how much power is being consumed via the smart camera. This command is run in the background. 
@@ -35,7 +35,7 @@ sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i
 ```
 You will see an output like the one below 
 
-<img src="/images/Power Measurement.JPG" width= 300 height =300>
+<img src="/images/Power Measurement.JPG">
 
 ## Exploring different features of AA1
 
