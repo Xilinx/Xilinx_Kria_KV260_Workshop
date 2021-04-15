@@ -50,7 +50,7 @@ ls -ll
 stream ready at:
 rtsp://boardip:port/test
 ```
-4.  Run "ffplay rtsp://boardip:port/test" on the PC to receive the rtsp stream. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
+4.  Run "ffplay rtsp://boardip:port/test" on a Linux system to receive the rtsp stream. If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg` To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
 
 ### MIPI DP display:
 1. Check that your monitor (HDMI or DP) is connected
