@@ -61,10 +61,8 @@ This will utilize the AR1335 camera or "mipi" device and stream via RTSP.
 2. The above command will invoke commands for width and height of the display as the 1st and 2nd parameter. If you press "enter", the default parameters will be 1920 x 1080.
 
 3. After running the script, the following message will appear:
-```
-stream ready at:
-rtsp://boardip:port/test
-```
+<img src="/images/rtsp stream.JPG">
+
 ### For Windows ###
 4. You will stream this on VLC media
 
