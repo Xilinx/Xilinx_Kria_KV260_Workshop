@@ -98,6 +98,14 @@ This will take a pre-existing video file and display it to the monitor.
 3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
 4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
 
+### **Optional**
+IF you wanted to test with your own video files, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
+```
+ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
+
+```
+After the files have been converted, you can copy them directly to your SD card.
+
 ### Mix and match
 1. In the command line, you can mix and match input & output combinations to run the application. 
 2. For example, you can use the following command: 
