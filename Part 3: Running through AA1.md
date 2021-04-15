@@ -1,14 +1,17 @@
 # Part 3: Running through AA1
 
-In the previous section, we can load AA1 and utilize a camera sensor.
-
-Alternatively, if you do not have MIPI or a USB camera, AA1 supports sourcing from a video file.
+In the previous section, we loaded AA1 and utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
 
 You can download one of the demo videos to test this feature:
  - Video 1: [Facedet / RefineDet AI Task](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
  - Video 2: [ADAS SSD AI Task](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
+ 
+To utilize the demo videos or your own videos, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
+```
+ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
 
-Then, you can transcode a MP4 file to a H264 file which is one supported input format. Afterwards, upload or copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
+```
+After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
 
 ## Using Jupyter Notebook 
 You can use a web-browser notebook to interact with the SOM board.
@@ -41,7 +44,7 @@ You will see an output like the one below
 
 There are many applications and features to utilize and explore through AA1. You can source any of the scripts below and observe the output which performs face detection and cars, bicycles, and person detection for ADAS using smart camera application running on starter kit. 
 
-You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both method so you can see what is happening in the script.
+You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both method so you can see what is happening in the scripts.
 
 The scripts are located in the following directory `/opt/xilinx/bin`. Use the following commands to access and see the directory:
 ```
@@ -50,15 +53,13 @@ ls -ll
 ```
 
 ### MIPI RTSP server
-This command will stream the video feed to an rtsp server, on which other users can see the footage if they have access to the rtsp link.
+This command will stream the video feed from the camera to an rtsp server, on which other users can see the footage if they have access to the rtsp link.
 
 1. Type the command `sudo 01.mipi-rtsp.sh` to start rtsp server for MIPI captured images. Alternatively, you can enter the following command: 
 ```
-smartcam_aa1 --mipi -t rtsp --width ${w} --height ${h} 
+smartcam_aa1 --mipi -t rtsp
 ```
-This will utilize the AR1335 camera or "mipi" device and stream via RTSP. 
-
-2. The above command will invoke commands for width and height of the display as the 1st and 2nd parameter. If you press "enter", the default parameters will be 1920 x 1080.
+This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You can specify the width and height of the monitor via `-w` and `-h` commands. Otherwise, it will default to 1920 x 1080.
 
 3. After running the script, the following message will appear:
 <img src="/images/rtsp stream.JPG">
@@ -67,18 +68,22 @@ This will utilize the AR1335 camera or "mipi" device and stream via RTSP.
 4. You will stream this on VLC media
 
 ### For Linux ###
-4.  Run "ffplay rtsp://boardip:port/test" on a Linux system to receive the rtsp stream. If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg` To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
+4.  Run "ffplay rtsp://boardip:port/test" on a Linux system to view the rtsp stream. If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg` To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
+
+Example rtsp link could be the following:
+```
+ffplay rtsp://192.168.1.26:554/test
+```
 
 The example below shows the command and the video playing: 
 **image** 
 
 ### MIPI DP display
-This command will directly output your footage to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people.
+This command will directly stream your footage to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
 1. Check that your monitor (HDMI or DP) is connected
 2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. Or you can enter the command `smartcam_aa1 --mipi --target dp`
-3. The above command will invoke commands for width and height of the display as the 1st and 2nd parameter. If you press "enter", the default parameters will be 1920 x 1080.
-4. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
+3. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
 
 ### File to File
 
@@ -89,8 +94,11 @@ This command will directly output your footage to an HDMI or DP monitor. This is
 3. This video output can be used for a face detection demo, generating a video with detection bounding box, etc.
 4. You can play the generated ./out.h264 video file with a media player of your choosing. The output video file will show blue boxes around the faces of people that will follow any movement on the camera.
 
+**video footage of AA1 box**
+
+
 ### File to DP
-This will take a pre-existing video file and display it to the monitor.
+This will take a pre-existing video file and display it to the monitor. This footage will display detection bounding boxes in red with green labels.
 
 1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam_aa1 --file ${file} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument from the script output as a path to the video file as shown below: 
@@ -98,13 +106,8 @@ This will take a pre-existing video file and display it to the monitor.
 3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
 4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
 
-### **Optional**
-IF you wanted to test with your own video files, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
-```
-ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
+**video footage of AA1 box**
 
-```
-After the files have been converted, you can copy them directly to your SD card.
 
 ### Mix and match
 1. In the command line, you can mix and match input & output combinations to run the application. 
