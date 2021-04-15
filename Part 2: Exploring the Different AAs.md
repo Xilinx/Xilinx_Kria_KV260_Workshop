@@ -35,6 +35,9 @@ You can connect to the AA1 via the following commands if you have the AR 1335 ca
 ```
 sudo xmutil unloadapp
 sudo xmutil loadapp kv260-smartcam
+```
+Please wait a few moments before running the next command. Wait to see `Loaded kv260-smartcam successfully` Otherwise, the camera devices will not be available. 
+```
 sudo smartcam --mipi 0 -W 1920 -H 1080
 ```
 
