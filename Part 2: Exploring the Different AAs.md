@@ -95,6 +95,13 @@ sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p
 ```
 *Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
 
+### **Optional**
+IF you wanted to test with your own video files, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
+```
+ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
+
+```
+After the files have been converted, you can copy them directly to your SD card.
 
 ## AA4: Defect detection (placeholder)
 ```
