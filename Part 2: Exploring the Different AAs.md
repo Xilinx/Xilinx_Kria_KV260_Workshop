@@ -89,6 +89,11 @@ sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2
  - The RTSP link, displayed in the top right corner by `-p 2`
  - A video file from the SD card, displayed in the bottom left corner by `-p 1`
 
+Finally, we will look at loading four channels, or videos, onto the monitor.
+```
+sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 0 -s /media/sd-mmcblk0p1/AA2-liverpool-1.nv12.30fps.1080p.h264 -t file -p 1 -s /media/sd-mmcblk0p1/AA2-park.nv12.30fps.1080p.h264 -t file -p 2 -s /media/sd-mmcblk0p1/AA2-liverpool-2.nv12.30fps.1080p.h264 -t file -p 3
+```
+*Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
 
 
 ## AA4: Defect detection (placeholder)
