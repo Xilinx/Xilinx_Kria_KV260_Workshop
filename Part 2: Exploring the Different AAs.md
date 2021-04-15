@@ -34,7 +34,7 @@ This application supports camera and sensor input options with accelerated Machi
 You can connect to the AA1 via the following commands if you have the AR 1335 camera connected.
 ```
 sudo xmutil unloadapp
-xmutil loadapp kv260-aa1
+sudo xmutil loadapp kv260-smartcam
 smartcam_aa1 --mipi 0 -W 1920 -H 1080 
 ```
 
@@ -94,14 +94,6 @@ Finally, we will look at loading four channels, or videos, onto the monitor.
 sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 0 -s /media/sd-mmcblk0p1/AA2-liverpool-1.nv12.30fps.1080p.h264 -t file -p 1 -s /media/sd-mmcblk0p1/AA2-park.nv12.30fps.1080p.h264 -t file -p 2 -s /media/sd-mmcblk0p1/AA2-liverpool-2.nv12.30fps.1080p.h264 -t file -p 3
 ```
 *Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
-
-### **Optional**
-IF you wanted to test with your own video files, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
-```
-ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
-
-```
-After the files have been converted, you can copy them directly to your SD card.
 
 ## AA4: Defect detection (placeholder)
 ```
