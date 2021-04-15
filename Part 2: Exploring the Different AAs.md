@@ -48,21 +48,22 @@ If you have an HDMI or DP monitor connected to the board, you will see a similar
 <img src="/images/som_aa1.png" width=400 height =200>
 
 ## AA2: AI box
-This applicaiton supports multi-stream IP camera RTSP inputs for supporting **pedestrian detection and re-identification (ReID)**. The network model is refinedet_pruned_0_96. The models in AI box can be dynamically loaded with the inference information displayed to a 4K monitor. The application can support up to 4 multiple streams or channels of 1080p videos running simultaneously. 
+This application supports multi-stream IP camera RTSP inputs for **pedestrian detection and re-identification (ReID)**. The network model is refinedet_pruned_0_96. The models in AI box can be dynamically loaded with the inference information displayed to a 4K monitor. The application can support up to 4 multiple streams or channels of 1080p videos running simultaneously. 
+
+You will need to setup a RTSP server link to be an input for the application. If you don not have a RTSP server on hand, smartcam_aa1 application can be used as the RTSP server on the AA2 platform, with -n option, which turn off the server side AI inference.
 
 To load the AI box, run the following command
 ```
 sudo xmutil unloadapp
-xmutil loadapp kv260-aa2
+sudo xmutil loadapp kv260-aibox-reid
 ```
 Then you will need to run the following command to enable AA2 for a 4K display monitor.
 ```
-sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:1920x1080@NV16 # Note 1920x1080 will depend on your monitor size.
+sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:1920x1080@NV16 
 ```
+*Note* the 1920x1080 will depend on your monitor.
 
-There are multiple ways you can set up AI box application, depending on the number of channels you want to enable. For this workshop, we will explore one channel and one process. 
-
-You will need to setup a RTSP server link to be an input for the application. If you don not have a RTSP server on hand, smartcam_aa1 application can be used as the RTSP server on the AA2 platform, with -n option, which turn off the server side AI inference.
+We will first explore one channel and one processor. This will display one video onto your monitor. 
 
 Use the following command to perform this action: 
 ```
@@ -78,6 +79,16 @@ This will be the link to observe the output on the 4K monitor with the following
 ```
 sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0
 ```
+
+Next, we will explore two channels, or videos, playing on the monitor.
+```
+sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2 
+-s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 1
+```
+*Note* there are two sources defined by `-s`: 
+ - The RTSP link, displayed in the top right corner by `-p 2`
+ - A video file from the SD card, displayed in the bottom left corner by `-p 1`
+
 
 
 ## AA4: Defect detection (placeholder)
