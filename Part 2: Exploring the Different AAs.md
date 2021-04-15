@@ -51,6 +51,8 @@ If you have an HDMI or DP monitor connected to the board, you will see a similar
 
 <img src="/images/som_aa1.png" width=400 height =200>
 
+We will dive into more features of AA1 in the next section.
+
 ## AA2: AI box
 This application supports multi-stream IP camera RTSP inputs for **pedestrian detection and re-identification (ReID)**. The network model is refinedet_pruned_0_96. The models in AI box can be dynamically loaded with the inference information displayed to a 4K monitor. The application can support up to 4 multiple streams or channels of 1080p videos running simultaneously. 
 
