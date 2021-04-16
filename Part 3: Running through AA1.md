@@ -72,11 +72,13 @@ This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You ca
 2. After running the script, the following message will appear:
 <img src="/images/rtsp stream.JPG">
 
-### For Windows ###
-3. You will stream this on VLC media
+You can stream this rtsp in different ways depending on your OS
 
-### For Linux ###
-4.  Run "ffplay rtsp://boardip:port/test" on a Linux system to view the rtsp stream. If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg` To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
+| For Windows/Mac | For Linux |
+| ------------- | ------------- |
+| You can use any of video media platform such as: - QuickTime <br> -Winamp <br> - VLC <br> - Windows Media Player (Windows only) | - Run "ffplay rtsp://boardip:port/test" on a Linux system to view the rtsp stream. <br> - If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg`|
+
+To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
 
 Example rtsp link could be the following:
 ```
