@@ -55,6 +55,11 @@ You can also use the following cameras (from UG 1089):
 |Smart camera AA1 | USB camera| Logitech BRIO|
 |Smart camera AA1 | Audio Codec I2S2 PMOD (J2)| Digilent PMOD SKU 410-379|
 |Defect detection AA4| IAS camera sensor ISP interface (J7)| OnSemi AR0144 sensor module. Avnet part number: CAV10-000A|
+
+You will also plug your ethernet cable into J10. You will have the best results if you are connected directly into your router. 
+
+If you need to set up a static address within your host machine, you can follow the instructions at this link:
+[Setting up a private network](https://xilinx.github.io/vck190-base-trd/build/html/run.html#setting-a-private-network) 
  
 ## 3. Configure your terminal
 This will be used to enter and read commands for the SOM board. 
