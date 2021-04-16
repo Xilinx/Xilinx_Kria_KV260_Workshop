@@ -104,7 +104,14 @@ This command will directly stream your footage to an HDMI or DP monitor. This is
 
 
 ### File to DP
-This will take a pre-existing video file and display it to the monitor. This footage will display detection bounding boxes in red with green labels.
+This will take a pre-existing video file and display it to the monitor. In this example, we will add the ```--aitask``` command to perform an AI task to run. 
+
+AA1 comes with three different options for AI tasks:
+1. facedetect
+2. ssd 
+3. refinedet
+
+We will specifically run ssd, which will display detection bounding boxes in red with green labels.
 
 1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument from the script output as a path to the video file as shown below: 
