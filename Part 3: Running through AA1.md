@@ -29,6 +29,7 @@ You can run through the notebooks on your own time to further explore their appl
 There are a number of tests you can perform with the smart camera:
 
 1. Throughput Measurement (Frames per Second)
+
 Enter the following command to display the FPS in the terminal. In this case, it should be around 49 FPS. 
 ```
 sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect -R
@@ -38,6 +39,7 @@ You will see an image like the one below:
 <img src="/images/SOM_FPS.JPG">
 
 2. Power Measurement
+
 Enter the following command to view how much power is being consumed via the smart camera. This command is run in the background. 
 ```
 sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect &
