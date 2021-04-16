@@ -15,7 +15,7 @@ To use any of these videos, you need to first convert them to a h.264 format.
 
 After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
 
-If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these instructions: 
+If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
 
 ## Using Jupyter Notebook 
 You can use a web-browser notebook to interact with the SOM board.
