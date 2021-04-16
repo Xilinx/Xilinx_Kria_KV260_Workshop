@@ -44,7 +44,7 @@ sudo smartcam --mipi 0 -W 1920 -H 1080
 
 Otherwise you can replace the `--mipi` command with 
 ```
-smartcam_aa1 --usb 0 -W 1920 -H 1080
+sudo smartcam --usb 0 -W 1920 -H 1080
 ```
 
 If you have an HDMI or DP monitor connected to the board, you will see a similar image appear on your screen.
@@ -63,27 +63,28 @@ To load the AI box, run the following command
 sudo xmutil unloadapp
 sudo xmutil loadapp kv260-aibox-reid
 ```
-Then you will need to run the following command to enable AA2 for a 4K display monitor.
+If you cannot see videos on the 4k monitor, you will need to run the following command to enable AA2 for a 4K display monitor.
 ```
 sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:1920x1080@NV16 
 ```
 *Note* the 1920x1080 will depend on your monitor.
 
+
 We will first explore one channel and one processor. This will display one video onto your monitor. 
 
 Use the following command to perform this action: 
 ```
-smartcam_aa1 -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &
+sudo smartcam -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &
 ```
 
 Running this command will output the following: 
 ```
-stream ready at: rtsp://192.168.29.11:5000/test
+stream ready at: rtsp://192.168.1.26:5000/test
 ```
 
 This will be the link to observe the output on the 4K monitor with the following command:
 ```
-sudo aibox_aa2 -s rtsp://192.168.29.11:5000/test -t rtsp -p 0
+sudo aibox-reid -s rtsp://192.168.1.26:5000/test -t rtsp -p 0
 ```
 
 Next, we will explore two channels, or videos, playing on the monitor.
