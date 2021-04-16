@@ -126,13 +126,10 @@ This will take input from a IAS sensor (MIPI) and output the detection to a file
 You can refer to the following table to explore more features within AA1: 
 [AA1 features & commands](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Additional%20AA1%20Features.md)
 
-### Exit out of AA1
+## Exit out of AA1
 To exit out of AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
 You can use `xmutil listapps` to see what other applications exist. 
-
-If you need to set up a static address within your host machine, you can follow the instructions at this link:
-[Setting up a private network](https://xilinx.github.io/vck190-base-trd/build/html/run.html#setting-a-private-network) 
 
 ## Jump to Part 4 (Optional)
 If you have time, you may jump ahead to [Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) or you may take it home to work on on your own.
