@@ -9,11 +9,11 @@ In Tera Term, you will see a Linux window boot open, and you can log in via user
 
 You can then enter the following commands to execute the Smart Camera Application after you see the following window appear:
 
-<img src="/images/som_console.JPG" width=500 height=150>
+<img src="/images/som_console.JPG">
 
 After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil listapps` to see what applications exist. 
 
-<img src="/images/xmutil_listapps.JPG" width=500 height =150>
+<img src="/images/xmutil_listapps.JPG">
 
 If you don't see the packages installed, you will need to download them onto the board.
 
