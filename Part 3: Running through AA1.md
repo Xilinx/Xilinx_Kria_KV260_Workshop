@@ -9,7 +9,6 @@ You can download one of the demo videos to test this feature:
 To utilize the demo videos or your own videos, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
 ```
 ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
-
 ```
 After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
 
