@@ -12,14 +12,16 @@ You can then enter the following commands to execute the Smart Camera Applicatio
 
 <img src="/images/som_console.JPG">
 
-After the Linux window has booted, we will now explore the different AAs available on the SOM board. You can use `xmutil listapps` to see what applications exist. 
+After the Linux window has booted, we will now explore the different AAs available on the SOM board. 
+
+## Installing Accelerated Application packages
+You can use `xmutil listapps` to see what applications exist. 
 
 <img src="/images/xmutil_listapps.JPG" width = 600 height = 200 >
 
-## Installing Accelerated Application packages
-If you don't see the packages installed, you will need to download them onto the board.
+If you don't see the packages installed, you will need to download them onto the board. Make sure the board is connected to the internet.
 
-You can enter the command `xmutil getpkgs` to see the packages available, and then use the following command to download it to the board.
+You can enter the command `xmutil getpkgs` to see the packages available, and then use the following commands to download the AA packages to the board.
 ```
 # For AA1
 sudo dnf install packagegroup-kv260-smartcam-aa1.noarch
@@ -91,8 +93,9 @@ This will be the link to observe the output on the 4K monitor with the following
 ```
 sudo aibox-reid -s rtsp://192.168.1.26:5000/test -t rtsp -p 0
 ```
+
 ### Streaming 2 channels
-Next, we will explore two channels, or videos, playing on the monitor.
+Next, we will explore two channels, or videos, playing on the monitor. Enter this command in the terminal: 
 ```
 sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2 
 -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 1
@@ -102,7 +105,7 @@ sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2
  - A video file from the SD card, displayed in the bottom left corner by `-p 1`
 
 ### Streaming 4 channels
-Finally, we will look at loading four channels, or videos, onto the monitor.
+Finally, we will look at loading four channels, or videos, onto the monitor. Enter this command in the terminal:
 ```
 sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 0 -s /media/sd-mmcblk0p1/AA2-liverpool-1.nv12.30fps.1080p.h264 -t file -p 1 -s /media/sd-mmcblk0p1/AA2-park.nv12.30fps.1080p.h264 -t file -p 2 -s /media/sd-mmcblk0p1/AA2-liverpool-2.nv12.30fps.1080p.h264 -t file -p 3
 ```
