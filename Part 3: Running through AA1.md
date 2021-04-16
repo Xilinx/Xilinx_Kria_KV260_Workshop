@@ -19,7 +19,9 @@ After the files have been converted, you can copy them directly to your SD card.
 You can use a web-browser notebook to interact with the SOM board.
 To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
 
-You will enter this URL in order to access the notebook. 
+You will enter the outputed URL into your browser.
+
+You can run through the notebooks on your own time to further explore their applications.
 
 ## Baseline measurements
 There are a number of tests you can perform with the smart camera:
@@ -46,7 +48,7 @@ You will see an output like the one below
 
 There are many applications and features to utilize and explore through AA1. You can source any of the scripts below and observe the output which performs face detection and cars, bicycles, and person detection for ADAS using smart camera application running on starter kit. 
 
-You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both method so you can see what is happening in the scripts.
+You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both methods so you can see what is happening in the scripts.
 
 The scripts are located in the following directory `/opt/xilinx/bin`. Use the following commands to access and see the directory:
 ```
@@ -59,15 +61,17 @@ This command will stream the video feed from the camera to an rtsp server, on wh
 
 1. Type the command `sudo 01.mipi-rtsp.sh` to start rtsp server for MIPI captured images. Alternatively, you can enter the following command: 
 ```
-smartcam_aa1 --mipi -t rtsp
+smartcam --mipi -t rtsp
 ```
 This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You can specify the width and height of the monitor via `-w` and `-h` commands. Otherwise, it will default to 1920 x 1080.
 
-3. After running the script, the following message will appear:
+2. After running the script, the following message will appear:
 <img src="/images/rtsp stream.JPG">
 
+**Edit from here**
+
 ### For Windows ###
-4. You will stream this on VLC media
+3. You will stream this on VLC media
 
 ### For Linux ###
 4.  Run "ffplay rtsp://boardip:port/test" on a Linux system to view the rtsp stream. If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg` To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
@@ -84,12 +88,12 @@ The example below shows the command and the video playing:
 This command will directly stream your footage to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
 1. Check that your monitor (HDMI or DP) is connected
-2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. Or you can enter the command `smartcam_aa1 --mipi --target dp`
+2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. Or you can enter the command `smartcam --mipi --target dp`
 3. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
 
 ### File to File
 
-1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam_aa1 --file ${file} --infile-type h264 --target file`. 
+1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam --file ${file} --infile-type h264 --target file`. 
 
 2. Identify the 1st argument from the script output as a path to the video file as shown below: 
 
@@ -102,7 +106,7 @@ This command will directly stream your footage to an HDMI or DP monitor. This is
 ### File to DP
 This will take a pre-existing video file and display it to the monitor. This footage will display detection bounding boxes in red with green labels.
 
-1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam_aa1 --file ${file} --target dp -r 30 --aitask ssd`
+1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument from the script output as a path to the video file as shown below: 
 
 3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
@@ -115,7 +119,7 @@ This will take a pre-existing video file and display it to the monitor. This foo
 1. In the command line, you can mix and match input & output combinations to run the application. 
 2. For example, you can use the following command: 
 ```
-smartcam_aa1 --mipi -W 1920 -H 1080 --target file >/dev/null 2>&1
+smartcam --mipi -W 1920 -H 1080 --target file >/dev/null 2>&1
 ```
 This will take input from a IAS sensor (MIPI) and output the detection to a file. 
 
@@ -125,7 +129,7 @@ You can refer to the following table to explore more features within AA1:
 ### Exit out of AA1
 To exit out of AA1, use the following command: `xmutil unloadapp kv260-aa1`
 
-You can use `xmutil lisapps` to see what other applications exist. 
+You can use `xmutil listapps` to see what other applications exist. 
 
 If you need to set up a static address within your host machine, you can follow the instructions at this link:
 [Setting up a private network](https://xilinx.github.io/vck190-base-trd/build/html/run.html#setting-a-private-network) 
