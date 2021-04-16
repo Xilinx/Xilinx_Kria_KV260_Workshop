@@ -50,7 +50,7 @@ You will see an output like the one below
 
 ## Exploring different features of AA1
 
-There are many applications and features to utilize and explore through AA1. You can source any of the scripts below and observe the output which performs face detection and cars, bicycles, and person detection for ADAS using smart camera application running on starter kit. 
+There are many applications and features to utilize and explore through AA1. You can source any of the .sh scripts below and observe the output. These scripts performs face detection and cars, bicycles, and person detection for ADAS using smart camera application.
 
 You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both methods so you can see what is happening in the scripts.
 
@@ -61,7 +61,7 @@ ls -ll
 ```
 
 ### MIPI RTSP server
-This command will stream the video feed from the camera to an rtsp server, on which other users can see the footage if they have access to the rtsp link.
+This command will stream the live video feed from the camera to an rtsp server, on which other users can see the footage if they have access to the rtsp link.
 
 1. Type the command `sudo 01.mipi-rtsp.sh` to start rtsp server for MIPI captured images. Alternatively, you can enter the following command: 
 ```
@@ -87,17 +87,17 @@ The example below shows the command and the video playing:
 **image** 
 
 ### MIPI DP display
-This command will directly stream your footage to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
+This command will directly stream your live footage from the camera to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
 1. Check that your monitor (HDMI or DP) is connected
 2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. Or you can enter the command `smartcam --mipi --target dp`
 3. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
 
 ### File to File
-
+This command will take a pre-existing video file and stream it onto your monitor.
 1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam --file ${file} --infile-type h264 --target file`. 
 
-2. Identify the 1st argument from the script output as a path to the video file as shown below: 
+2. Identify the 1st argument **${file}** from the script output as a path to the video file.
 
 3. This video output can be used for a face detection demo, generating a video with detection bounding box, etc.
 4. You can play the generated ./out.h264 video file with a media player of your choosing. The output video file will show blue boxes around the faces of people that will follow any movement on the camera.
@@ -116,7 +116,7 @@ AA1 comes with three different options for AI tasks:
 We will specifically run ssd, which will display detection bounding boxes in red with green labels.
 
 1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file} --target dp -r 30 --aitask ssd`
-2. Identify the 1st argument from the script output as a path to the video file as shown below: 
+2. Identify the 1st argument **${file}** from the script output as a path to the video file.
 
 3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
 4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
