@@ -1,6 +1,6 @@
 # Part 3: Running through AA1
 
-In the previous section, we loaded AA1 and utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
+In the previous section, we loaded different AAs and explored what they could do. Now, we will dive into AA1. We briefly utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
 
 You can download one of the demo videos to test this feature:
  - Video 1: [Facedet / RefineDet AI Task](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
