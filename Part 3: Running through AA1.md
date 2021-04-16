@@ -68,8 +68,6 @@ This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You ca
 2. After running the script, the following message will appear:
 <img src="/images/rtsp stream.JPG">
 
-**Edit from here**
-
 ### For Windows ###
 3. You will stream this on VLC media
 
@@ -100,7 +98,7 @@ This command will directly stream your footage to an HDMI or DP monitor. This is
 3. This video output can be used for a face detection demo, generating a video with detection bounding box, etc.
 4. You can play the generated ./out.h264 video file with a media player of your choosing. The output video file will show blue boxes around the faces of people that will follow any movement on the camera.
 
-**video footage of AA1 box**
+<img src="/images/AA1_file_to_file.gif">
 
 
 ### File to DP
@@ -119,7 +117,7 @@ We will specifically run ssd, which will display detection bounding boxes in red
 3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
 4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
 
-**video footage of AA1 box**
+<img src="/images/AA1_file_to_DP.gif">
 
 
 ### Mix and match
