@@ -1,4 +1,5 @@
 # Part 2: Exploring the Different AAs (30 - 45 minutes)
+Before continuing, make sure that you have disabled VPN. 
 
 ## Initial Window
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
