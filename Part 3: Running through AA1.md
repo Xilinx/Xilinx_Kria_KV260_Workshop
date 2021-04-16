@@ -2,11 +2,11 @@
 
 In the previous section, we loaded different AAs and explored what they could do. Now, we will dive into AA1. We briefly utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
 
-You can download one of the demo videos to test this feature:
- - Video 1: [Facedet / RefineDet AI Task](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
- - Video 2: [ADAS SSD AI Task](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
+You can use one of your own videos, or you can download any of the demo videos provided: 
+ - [Facedet / RefineDet AI Task Video](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
+ - [ADAS SSD AI Task Video](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
  
-To utilize the demo videos or your own videos, you need to convert the video files first to a h.264 format. 
+To use any of these videos, you need to first convert them to a h.264 format. 
 
 | For Windows/Mac | For Linux |
 | ------------- | ------------- |
