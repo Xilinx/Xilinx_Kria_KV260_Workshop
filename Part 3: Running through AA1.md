@@ -6,10 +6,20 @@ You can download one of the demo videos to test this feature:
  - Video 1: [Facedet / RefineDet AI Task](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
  - Video 2: [ADAS SSD AI Task](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
  
-To utilize the demo videos or your own videos, you need to convert the video files first to a h.264 format. Use the following command to do this, replacing "input-video.mp4" with the name of your video file
+To utilize the demo videos or your own videos, you need to convert the video files first to a h.264 format. 
+
+| For Windows/Mac | For Linux |
+| ------------- | ------------- |
+| You can convert MP4 to H.264 online: 
+1. Go to the following link: [Convert files](https://www.convertfiles.com/convert/video/MP4-to-264.html). This is a third-party application.
+2. Click "Browse" and add the MP4 file from your computer. 
+3. At *Output* format, choose *Raw H.264 Video Files (.264)*
+4. Click *Convert* to start the conversion process.   |Use the following command to do this, replacing "input-video.mp4" with the name of your video file
 ```
 ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264
-```
+```  
+|
+
 After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
 
 ## Using Jupyter Notebook 
