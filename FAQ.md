@@ -33,8 +33,6 @@ This table lists out potential issues you may encounter, and how to resolve them
 | MIPI or VCU not loaded| Make sure that you have entered the command `xmutil loadapp kv260-smartcam`|
 | Something previously loaded | Make sure to unload the current application via `sudo xmutil unloadapp` |
 |- ERROR: Device x is not ready. <br> - ERROR: MIPI device x is not ready. <br> - ERROR: Device x is not USB cam.| You have entered the wrong media index, calling a MIPI camera as a USB or vice versa. Please check the type of camera you are using.|
-|Monitor doesn't look like it's connected| Use the command `modetest -M xlnx` to check the status of the connected monitor. <br> ```Connectors:
-id      encoder status          name            size (mm)       modes   encoders
-43      42      connected       DP-1            610x350         43      42```|
+|Monitor doesn't look like it's connected| Use the command `modetest -M xlnx` to check the status of the connected monitor.|
 
 
