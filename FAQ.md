@@ -34,5 +34,6 @@ This table lists out potential issues you may encounter, and how to resolve them
 | Something previously loaded | Make sure to unload the current application via `sudo xmutil unloadapp` |
 |- ERROR: Device x is not ready. <br> - ERROR: MIPI device x is not ready. <br> - ERROR: Device x is not USB cam.| You have entered the wrong media index, calling a MIPI camera as a USB or vice versa. Please check the type of camera you are using.|
 |Monitor doesn't look like it's connected| Use the command `modetest -M xlnx` to check the status of the connected monitor.|
+|- ERROR: memory leak <br> - xlnx_snd_card xlnx_snd_card.1.auto: ASoC: failed to init link xilinx-i2s_playback: -517 <br> - xlnx_snd_card xlnx_snd_card.1.auto: xlnx-i2s-snd-card-0 registration failed| These are Benign Errors messages|
 
 
