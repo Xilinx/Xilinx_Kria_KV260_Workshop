@@ -73,6 +73,8 @@ After opening Tera Term or Putty, select the COM port listed first (i.e. select 
 -	Flow control = None
 -	Parity = None
 
+**Note** The monitor should be connected before turning on the board otherwise the resolution will not be recognized.
+
 Power on the SOM board by connecting the power supply into J12 and into the wall outlet. Observe the LED’s illuminating to indicate power. 
 
 <img src="/images/IMG_8591.jpg" width=400 height =500>
