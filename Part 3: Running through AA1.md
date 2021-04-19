@@ -48,6 +48,27 @@ You will see an output like the one below
 
 <img src="/images/Power Measurement.JPG">
 
+
+3. End-to-end Latency Measurement
+This is a useful tool to measure interlancey value in AA1 via the GStreamer pipeline embedded in the smart camera. This measurement is calculated from the source plugin to the sink plugin.
+
+Run the following commands to install the GstShark packages:
+
+```
+dnf search GstShark
+sudo dnf install libgstshark0.aarch64
+```
+
+To measure latency while using the facdetect model use the following command, which will capture the FPS and interlanecy values. These values will be saved in a log file called "facedetect-log.txt" file. 
+```
+sudo GST_DEBUG="GST_TRACER:7" GST_TRACERS=interlatency smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect >& facedetect-log.txt &
+```
+
+To access these values, run the below command in the terminal:
+```
+grep -rn interlatency facedetect-log.txt | tail -n 20 | cut -d'=' -f2-4
+```
+
 ## Exploring different features of AA1
 
 There are many applications and features to utilize and explore through AA1. You can source any of the .sh scripts below and observe the output. These scripts performs face detection and cars, bicycles, and person detection for ADAS using smart camera application.
