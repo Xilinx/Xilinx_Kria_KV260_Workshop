@@ -1,6 +1,9 @@
 # Part 2: Exploring the Different AAs (30 - 45 minutes)
 Before continuing, make sure that you have disabled VPN as this may prevent you from accessing files. 
 
+# FAQ
+If you are having any issues, you can refer to the [FAQ](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md) to help you resolve any issues.
+
 ## Initial Window
 After the boot, you will observe the green heart LED flashing along the SOM fan at LED, labeled DS35.
 
