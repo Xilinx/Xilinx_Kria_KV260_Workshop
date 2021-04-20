@@ -32,6 +32,8 @@ You will need the following tools installed on your computer or you can access t
 ## 1. Write to SD card
 If you already have an SD card with the image pre-installed, you may skip this step. 
 
+You can find the SD image at the following link [SD image](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/setting-up-the-sd-card-image.html)
+
 Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that is plugged into your local computer. You can use one of the following tools to write the disk image. The instructions for writing to the SD card are included as well:
 | Balena Etcher | Win32 Disk |
 | --- | --- |
