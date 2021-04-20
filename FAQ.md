@@ -27,6 +27,7 @@ Platform Management utility (xmutil) commands help configure and work the SOM bo
 This table lists out potential issues you may encounter, and how to resolve them. 
 | Issue  | Resolution |
 | ------------- | ------------- |
+|My board is not booting automatically| Ensure that the board has QSPI programmed properly. You can go through these instructions: [Enable SD card instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Enable%20Boot%20for%20SD%20card.md)|
 | How do I find a USB camera device?| Use the command `ls /dev/media*` to list the cameras|
 | There is a heartbeat LED active, but UART isn't responding.  |Verify that your machine has a FTDI driver installed and that the terminal is connected to the correct COM port.  |
 | "Device is not ready" | After invoking the command xmutil loadapp to load firmware, it needs several seconds for the whole firmware to be ready. If you invoke the smartcam application before it is ready, it may report errors about devices readiness.  |
