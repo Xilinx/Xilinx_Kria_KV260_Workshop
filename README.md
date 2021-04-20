@@ -1,5 +1,5 @@
 # Xilinx KV260 Workshop
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
+<img src="/images/xilinx-kria-color-cmyk-logo.jpg">
 
 This repository is designed to set up the KV260 Starter kit board and then run Accelerated Applications (AA) on the SOM board. Working through each section will help you learn how to integrate Xilinx carrier card with some AI and Smart Camera applications. You can take what you've learned here to your own projects and applications. 
 
