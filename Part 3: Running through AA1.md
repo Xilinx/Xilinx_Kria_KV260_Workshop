@@ -53,7 +53,8 @@ You will see an output like the one below
 <img src="/images/Power Measurement.JPG">
 
 
-3. End-to-end Latency Measurement
+3. End-to-end Latency Measurement (From source plugin to sink plugin)
+
 This is a useful tool to measure interlancey value in AA1 via the GStreamer pipeline embedded in the smart camera. This measurement is calculated from the source plugin to the sink plugin.
 
 Run the following commands to install the GstShark packages:
