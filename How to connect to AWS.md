@@ -30,7 +30,7 @@ For linux & mac, you will use scp
 
 enter the following command into the terminal: 
 ```
-scp [username]@[IP_address]:[path to file] [path toe destination]
+scp [source_username]@[source_IP_address]:[path to file] [path toe destination]
 ```
 You will need to enter the password to access the files.
 
