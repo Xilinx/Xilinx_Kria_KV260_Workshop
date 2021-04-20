@@ -21,12 +21,22 @@ Note the hello.txt file in both windows:
 
 
 ## Linux & Mac
-For Linux & Mac, you will use scp
+For Linux & Mac, you will install remmina on your computer.
+
+```
+sudo apt install remmina
+```
+
+Log into RDP in your Remmina program. 
+
+
 
 Enter the following command into a terminal: 
 ```
-scp [username]@[IP_address]:[path to file] [path toe destination]
+scp [source_username]@[source_IP_address]:[path to file] [destination_username]@[destination_IP_address]:[path to destination]
 ```
 You will need to enter the password to access the files.
 
 The user name is the login in for the SOM board, and the board IP_address is the found by entering ```ifconfig``` into the board terminal.
+
+**NOTE** if you are using the AWS instance to scp files over to your local computer, use the **Public** IP address as provided by the workshop admin. This should be the same IP address you used to log in.
