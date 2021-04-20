@@ -27,13 +27,13 @@ If you don't see the packages installed, you will need to download them onto the
 You can enter the command `xmutil getpkgs` to see the packages available, and then use the following commands to download the AA packages to the board.
 ```
 # For AA1
-sudo dnf install packagegroup-kv260-smartcam-aa1.noarch
+sudo dnf install packagegroup-kv260-smartcam.noarch
 
 # For AA2
-sudo dnf install packagegroup-kv260-aibox-aa2.noarch
+sudo dnf install packagegroup-kv260-aibox-reid.noarch
 
 # For AA4 
-sudo dnf install packagegroup-kv260-defect-detection-aa4.noarch
+sudo dnf install packagegroup-kv260-defect-detect.noarch
 ```
 ## AA1: Smart Camera
 This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
