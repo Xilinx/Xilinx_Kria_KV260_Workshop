@@ -146,8 +146,7 @@ We will specifically run ssd, which will display detection bounding boxes in red
 1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument **${file}** from the script output as a path to the video file.
 
-3. This video output can be used for ADAS SSD demos or more to perform vehicle detection, peform detection bounding box, and display it to a monitor. 
-4. To check, you should see a video of highway driving, with the detection of vehicles in a bounding box.
+3. This video output can be used for ADAS SSD demos to add detection bounding box, and display it to a monitor like the image below
 
 <img src="/images/AA1_file_to_DP.gif">
 
