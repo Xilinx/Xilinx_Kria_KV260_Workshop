@@ -97,6 +97,10 @@ This will be the link to observe the output on the 4K monitor with the following
 sudo aibox-reid -s rtsp://192.168.1.26:5000/test -t rtsp -p 0
 ```
 
+You should see an output on your monitor like the one below:
+
+<img src="/images/AA2_1channel.gif">
+
 ### Streaming 2 channels
 Next, we will explore two channels, or videos, playing on the monitor. Enter this command in the terminal: 
 ```
@@ -107,6 +111,9 @@ sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2
  - The RTSP link, displayed in the top right corner by `-p 2`
  - A video file from the SD card, displayed in the bottom left corner by `-p 1`
 
+You will see the following on your screen with two blue boxes representing the "unused" screens.
+<img src="/images/AA2_2channels.gif">
+
 ### Streaming 4 channels
 Finally, we will look at loading four channels, or videos, onto the monitor. Enter this command in the terminal:
 ```
@@ -114,7 +121,11 @@ sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p
 ```
 *Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
 
-## AA4: Defect detection (this application may not be available at this time)
+You will see four different videos playing simulatenously.
+<img src="/images/AA2_4channels.gif">
+
+
+## AA4: Defect detection (Coming Soon)
 ```
 sudo xmutil unloadapp
 xmutil loadapp kv260-aa4
@@ -134,12 +145,6 @@ There are multiple options for live playback. You can test any of the following 
  defect-detect -w 1280 -h 800 -r 60 -f 1 -i input.yuv -x raw.yuv -y pre_pros.yuv -z final.yuv
  ```
  
-## AA5: License plate recognition (this application may not be available at this time)
-```
-sudo xmutil unloadapp
-xmutil loadapp kv260-aa5
-```
-
 ## Jump to Part 3
 
 Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
