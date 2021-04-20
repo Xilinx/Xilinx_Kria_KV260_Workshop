@@ -3,7 +3,7 @@
 # FAQ
 If you are having any issues, you can refer to the [FAQ](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md) to help you resolve any issues.
 
-# Converting & Loading video files to AA1
+# Converting & Loading video files to SOM
 In the previous section, we loaded different AAs and explored what they could do. Now, we will dive into AA1. We briefly utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
 
 You can use one of your own videos, or you can download any of the demo videos provided: 
