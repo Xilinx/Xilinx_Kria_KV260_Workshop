@@ -35,6 +35,25 @@ sudo dnf install packagegroup-kv260-aibox-reid.noarch
 # For AA4 
 sudo dnf install packagegroup-kv260-defect-detect.noarch
 ```
+
+# Converting & Loading video files to SOM
+YOu can use the camera for the SOM, or you can also source from a video file.
+
+You can use one of your own videos, or you can download any of the demo videos provided: 
+ - [Facedet / RefineDet AI Task Video](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
+ - [ADAS SSD AI Task Video](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
+ 
+To use any of these videos, you need to first convert them to a h.264 format. 
+
+| For Windows/Mac | For Linux |
+| ------------- | ------------- |
+| You can convert MP4 to H.264 online | You can convert MP4 to H.264 in terminal |
+| 1. Go to the following link: [Convert files](https://www.convertfiles.com/convert/video/MP4-to-264.html). This is a third-party application. <br><br> 2. Click "Browse" and add the MP4 file from your computer. <br><br> 3. At *Output* format, choose *Raw H.264 Video Files (.264)* <br> <br> 4. Click *Convert* to start the conversion process. | Use the following command to do this, replacing "input-video.mp4" with the name of your video file <br> <br> ``` ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264``` |
+
+After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. Place the video within the directory /home/petalinux. 
+
+If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
+
 ## AA1: Smart Camera
 This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
 
