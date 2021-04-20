@@ -122,6 +122,7 @@ sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p
 *Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
 
 You will see four different videos playing simulatenously.
+
 <img src="/images/AA2_4channels.gif">
 
 
