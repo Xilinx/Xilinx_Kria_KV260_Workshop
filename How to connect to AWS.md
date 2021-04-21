@@ -17,16 +17,14 @@ Open the "Remote Desktop Connection".
 You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. 
 
 ## Linux & Mac
-For linux & mac, you will use Remmina.
+For linux & mac, you will use Remmina to access a Remote Desktop. 
 
-You will enter the following command in a terminal to install remmina if you do not have it.
-
-For Ubuntu
+In an Ubuntu environment, you will enter the following command in a terminal to install remmina if you do not have it.
 ```
 sudo apt install remmina
 ```
 
-If you have a different OS, you can install remmina at the following [link](https://websiteforstudents.com/use-remmina-remote-desktop-client-rdp-on-ubuntu-16-04-18-04-lts/)
+If you have a different OS, you can install Remmina at the following [link](https://websiteforstudents.com/use-remmina-remote-desktop-client-rdp-on-ubuntu-16-04-18-04-lts/)
 
 Once you have it installed, enter the following command in the terminal:
 ```
