@@ -6,7 +6,7 @@ This repository is designed to set up the KV260 Starter kit board and then run A
 The KV 260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, integrated power solution, and security module. The vision-focused SOM carrier card includes various application peripheral options such as camera, sensor inputs, video display outputs, USB, SD card, and Ethernet interfaces.
 
 ## Part 1: Setup Board
-In this part, you will connect the cables, camera, and SD card to the board and boot the SOM via pre-installed image. 
+In this part, you will connect the cables, camera, and SD card to the board and boot the SOM via pre-installed image. The terminal will open automatically when everything is connected.
 
 Go to Part 1: 
  - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
@@ -14,17 +14,18 @@ Go to Part 1:
  - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
  
 ## Part 2: Exploring the Different AAs
-In this part, you will see the various Accelerated Applications available on the SOM board.
+In this part, you will see the various Accelerated Applications available on the SOM board. We will explore smart camera, AI box, and Defect Detection.
 
 [Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
 
 ## Part 3: Running through AA1
-In this part, you will be diving deeper into AA1, the Smart Camera application.
+In this part, you will be diving deeper into AA1, the Smart Camera application. We will explore the different ways to source a video feed and how to stream it across different platforms such as HDMI, DP, or RTSP.
 
 [Go to Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
 ## Part 4: Optional Demo
+This section is optional, and will dive into how to load new models onto the SOM board. 
 [Go to Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md)
 
 ## Additional Resources
