@@ -32,7 +32,7 @@ Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that
 
 Use the following command `dmesg|grep sd|tail` to identify the SD card. In this example, we'll use **sd<#>** to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. The image below indicates the correct device based on the size and type of device: 
 
-<img src="/images/linux_image_sd.JPG" width=100 height =100>
+<img src="/images/linux_image_sd.JPG">
 
 Then enter the following commands in the terminal,replacing **sd<#>** with your SD card number:
 ```
