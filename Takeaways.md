@@ -1,4 +1,6 @@
 # Takeaways
+<img src="/images/xilinx-kria-color-cmyk-logo.jpg" width = 200 height = 100>
+
 We've explored a lot of features on the SOM board.
 
 Here are some important highlights from the workshop:
