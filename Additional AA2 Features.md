@@ -12,8 +12,9 @@
                                                  Can set up to 4 times.
 
 -p, --pos=[0|1|2|3]                              Location of the display in the 4 grids of 4k monitor. Optional.
-
-                                                 0: top left, 1: top right, 2: bottom left, 3: bottom right. Optional. Can set up to 4 times.
+                                                 0: top left, 1: top right, 2: bottom left, 3: bottom right. 
+                                                 Optional. Can set up to 4 times.
+                                                 
 -R, --report                                     Report fps
         
  ```
