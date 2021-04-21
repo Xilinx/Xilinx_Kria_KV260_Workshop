@@ -54,7 +54,8 @@ sudo dnf install libgstshark0.aarch64
 
 To measure latency while using the facdetect model use the following command, which will capture the FPS and interlanecy values. These values will be saved in a log file called "facedetect-log.txt" file. 
 ```
-sudo GST_DEBUG="GST_TRACER:7" GST_TRACERS=interlatency smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect >& facedetect-log.txt &
+sudo GST_DEBUG="GST_TRACER:7" GST_TRACERS=interlatency smartcam --file ${file.h264} -i h264 
+-W 1920 -H 1080 -r 30 --target dp --aitask facedetect >& facedetect-log.txt &
 ```
 
 To access these values, run the below command in the terminal:
@@ -111,7 +112,7 @@ This command will directly stream your live footage from the camera to an HDMI o
 
 ### File to File
 This command will take a pre-existing video file and stream it onto your monitor.
-1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam --file ${file} --infile-type h264 --target file`. 
+1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam --file ${file.h264} --infile-type h264 --target file`. 
 
 2. Identify the 1st argument **${file}** from the script output as a path to the video file.
 
@@ -131,7 +132,7 @@ AA1 comes with three different options for AI tasks:
 
 We will specifically run ssd, which will display detection bounding boxes in red with green labels.
 
-1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file} --target dp -r 30 --aitask ssd`
+1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file.h264} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument **${file}** from the script output as a path to the video file.
 
 3. This video output can be used for ADAS SSD demos to add detection bounding box, and display it to a monitor like the image below
