@@ -50,7 +50,7 @@ To use any of these videos, you need to first convert them to a h.264 format.
 | You can convert MP4 to H.264 online | You can convert MP4 to H.264 in terminal |
 | 1. Go to the following link: [Convert files](https://www.convertfiles.com/convert/video/MP4-to-264.html). This is a third-party application. <br><br> 2. Click "Browse" and add the MP4 file from your computer. <br><br> 3. At *Output* format, choose *Raw H.264 Video Files (.264)* <br> <br> 4. Click *Convert* to start the conversion process. | Use the following command to do this, replacing "input-video.mp4" with the name of your video file <br> <br> ``` ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264``` |
 
-After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. Place the video within the directory /home/petalinux. 
+After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. Place the video within the directory `/home/petalinux`.
 
 If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
 
@@ -103,8 +103,10 @@ We will first explore one channel and one processor. This will display one video
 
 Use the following command to perform this action: 
 ```
-sudo smartcam -f /usr/share/somapp/movies/AA2/AA2-park.nv12.30fps.1080p.h264 -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &
+sudo smartcam -f ${file.h264} -W 1920 -H 1080 -r 30 -t rtsp -p 5000 -n &
 ```
+
+where `${file.h264}` is the path to h264 video file
 
 Running this command will output the following: 
 ```
@@ -124,8 +126,10 @@ You should see an output on your monitor like the one below:
 Next, we will explore two channels, or videos, playing on the monitor. Enter this command in the terminal: 
 ```
 sudo aibox-reid -s rtsp://192.168.29.11:5000/test -t rtsp -p 2 
--s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 1
+-s ${file.h264} -t file -p 1
 ```
+where `${file.h264}` is the path to h264 video file
+
 *Note* there are two sources defined by `-s`: 
  - The RTSP link, displayed in the top right corner by `-p 2`
  - A video file from the SD card, displayed in the bottom left corner by `-p 1`
@@ -136,7 +140,8 @@ You will see the following on your screen with two blue boxes representing the "
 ### Streaming 4 channels
 Finally, we will look at loading four channels, or videos, onto the monitor. Enter this command in the terminal:
 ```
-sudo aibox-reid -s /media/sd-mmcblk0p1/AA2-shop.nv12.30fps.1080p.h264 -t file -p 0 -s /media/sd-mmcblk0p1/AA2-liverpool-1.nv12.30fps.1080p.h264 -t file -p 1 -s /media/sd-mmcblk0p1/AA2-park.nv12.30fps.1080p.h264 -t file -p 2 -s /media/sd-mmcblk0p1/AA2-liverpool-2.nv12.30fps.1080p.h264 -t file -p 3
+sudo aibox-reid -s ${file1.h264} -t file -p 0 -s ${file2.h264} -t file -p 1 
+-s ${file3.h264} -t file -p 2 -s ${file4.h264} -t file -p 3
 ```
 *Note* the four files indicated in the four quardants by `-p 0`, `-p 1`,`-p 1`,`-p 2`, and `-p 3`. They are sourced from four different input files on the SD card.
 
