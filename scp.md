@@ -21,14 +21,7 @@ Note the hello.txt file in both windows:
 
 
 ## Linux & Mac
-For Linux & Mac, you will install remmina on your computer.
-
-```
-sudo apt install remmina
-```
-
-Log into RDP in your Remmina program. 
-
+For Linux & Mac, you will SCP or copy files to your computer.
 
 
 Enter the following command into a terminal: 
