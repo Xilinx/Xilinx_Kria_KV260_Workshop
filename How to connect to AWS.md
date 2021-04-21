@@ -40,7 +40,8 @@ Make sure to select RDP, and then you will enter the IP address as provided by t
 
 *Note*: If you have issues with the color depth, please select an option that indicates "True Color"
 
-<img src="/images/rdp_debian.JPG" >
-
-
 <img src="/images/remmina.JPG" >
+
+Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. You will now be able to access the Xilinx tools and files during this workshop session.
+
+<img src="/images/rdp_debian.JPG" >
