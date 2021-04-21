@@ -1,4 +1,4 @@
-# Part 4: Optional Demo
+# Part 4: Optional Demo (in progress)
 
 Depending on time, you may complete this demo at home. 
 
