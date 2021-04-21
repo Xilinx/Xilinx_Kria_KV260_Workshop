@@ -14,7 +14,7 @@ Open the "Remote Desktop Connection".
 
 <img src="/images/rdp_windows.JPG" >
 
-You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. 
+You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. You will now be able to access the Xilinx tools and files during this workshop session.
 
 <img src="/images/rdp_debian.JPG" >
 
