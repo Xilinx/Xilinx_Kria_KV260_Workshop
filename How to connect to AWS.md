@@ -12,12 +12,14 @@ The Public IP address will be provided by the workshop admin.
 ## Windows
 Open the "Remote Desktop Connection". 
 
+<img src="/images/rdp_windows.JPG" >
+
 You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. 
 
 ## Linux & Mac
-For linux & mac, you will use remmina.
+For linux & mac, you will use Remmina.
 
-You will enter the following command to install remmina if you do not have it.
+You will enter the following command in a terminal to install remmina if you do not have it.
 
 For Ubuntu
 ```
@@ -26,4 +28,16 @@ sudo apt install remmina
 
 If you have a different OS, you can install remmina at the following [link](https://websiteforstudents.com/use-remmina-remote-desktop-client-rdp-on-ubuntu-16-04-18-04-lts/)
 
+Once you have it installed, enter the following command in the terminal:
+```
+remmina
+```
+This will open the RDP as shown below.
 
+<img src="/images/rdp_linux_open.JPG" >
+
+Make sure to select RDP, and then you will enter the IP address as provided by the workshop admin in the following window. 
+
+*Note*: If you have issues with the color depth, please select an option that indicates "True Color"
+
+<img src="/images/remmina.JPG" >
