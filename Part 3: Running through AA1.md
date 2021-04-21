@@ -3,22 +3,6 @@
 # FAQ
 If you are having any issues, you can refer to the [FAQ](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md) to help you resolve any issues.
 
-# Converting & Loading video files to SOM
-In the previous section, we loaded different AAs and explored what they could do. Now, we will dive into AA1. We briefly utilized the camera sensor. Alternatively, AA1 can support sourcing from a video file.
-
-You can use one of your own videos, or you can download any of the demo videos provided: 
- - [Facedet / RefineDet AI Task Video](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
- - [ADAS SSD AI Task Video](https://pixabay.com/videos/freeway-traffic-cars-rainy-truck-8358/)
- 
-To use any of these videos, you need to first convert them to a h.264 format. 
-
-| For Windows/Mac | For Linux |
-| ------------- | ------------- |
-| You can convert MP4 to H.264 online | You can convert MP4 to H.264 in terminal |
-| 1. Go to the following link: [Convert files](https://www.convertfiles.com/convert/video/MP4-to-264.html). This is a third-party application. <br><br> 2. Click "Browse" and add the MP4 file from your computer. <br><br> 3. At *Output* format, choose *Raw H.264 Video Files (.264)* <br> <br> 4. Click *Convert* to start the conversion process. | Use the following command to do this, replacing "input-video.mp4" with the name of your video file <br> <br> ``` ffmpeg -i "input-video.mp4" -c:v libx264 -pix_fmt nv12 -r 30 output.nv12.h264``` |
-
-After the files have been converted, you can copy them directly to your SD card. Or you can copy the H264 file to the board (using scp, ftp, or copy directly onto the SD card. You'll find the videos under /media/sd-mmcb1kop1/. Place the video within the directory /home/petalinux. 
-
 If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
 
 ## Using Jupyter Notebook 
@@ -34,10 +18,12 @@ There are a number of tests you can perform with the smart camera:
 
 1. Throughput Measurement (Frames per Second)
 
-Enter the following command to display the FPS in the terminal. In this case, it should be around 49 FPS. 
+Enter the following command to display the FPS in the terminal. In the example below, it reads around 49 FPS. 
 ```
-sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect -R
+sudo smartcam --file ${file.h264} -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect -R
 ```
+where `${file.h264}` is the path to your h264 video file.
+
 You will see an image like the one below:
 
 <img src="/images/SOM_FPS.JPG">
@@ -46,8 +32,10 @@ You will see an image like the one below:
 
 Enter the following command to view how much power is being consumed via the smart camera. This command is run in the background. 
 ```
-sudo smartcam --file /media/sd-mmcblk0p1/walking-people.nv12.30fps.1080p.h264 -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect &
+sudo smartcam --file ${file.h264} -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect &
 ```
+where `${file.h264}` is the path to your h264 video file.
+
 You will see an output like the one below 
 
 <img src="/images/Power Measurement.JPG">
