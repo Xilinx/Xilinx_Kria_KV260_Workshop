@@ -9,7 +9,11 @@ If you are unsure how to use scp command for Windows, Linux, or Mac, please refe
 You can use a web-browser notebook to interact with the SOM board.
 To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
 
-You will enter the outputed URL into your browser.
+<img src="/images/Jupyter_console.JPG">
+
+You will enter the outputed URL into your browser. The notebook will be displayed as the following:
+
+<img src="/images/Jupyter_notebook.JPG">
 
 You can run through the notebooks on your own time to further explore their applications.
 
