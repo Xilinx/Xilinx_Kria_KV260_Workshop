@@ -37,7 +37,7 @@ sudo dnf install packagegroup-kv260-defect-detect.noarch
 ```
 
 # Converting & Loading video files to SOM
-YOu can use the camera for the SOM, or you can also source from a video file.
+You can use the camera for the SOM, or you can also source from a video file.
 
 You can use one of your own videos, or you can download any of the demo videos provided: 
  - [Facedet / RefineDet AI Task Video](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
