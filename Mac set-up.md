@@ -34,7 +34,7 @@ Using the downloaded petalinux-sdimage.wic, write the image onto an SD card that
 
 Use the following command `diskutil list` to identify the SD card. In this example, we'll use **disk3** to indicate the SD card. Make sure that you select the correct device so that you do not accidentally overwrite the hard drive. The image below indicates the correct device based on the size and type of device: 
 
-<img src="/images/placeholder-1-e1533569576673.png" width=100 height =100>
+<img src="/images/mac_image_sd.JPG" width=100 height =100>
 
 If the SD card has an existing partition, you may need to unmount it with the following command: `diskutil unmount /dev/disk3s1`
 
