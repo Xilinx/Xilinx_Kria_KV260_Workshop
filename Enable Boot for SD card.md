@@ -2,6 +2,8 @@
 
 If you notice that the SOM board isn't booting the Linux window automatically, you will need to program it with the following instructions:
 
+You will need Xilinx tools to accomplish this, and to have your board connected to Vivado.
+
 ## Opening QSPI Programming
 1. Open a XDSB or XSCT console
 2. Use the following command in the console to enable JTAG bootmode `source boot_mode/menu_tests.tcl`
