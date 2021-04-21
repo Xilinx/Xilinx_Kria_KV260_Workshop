@@ -7,31 +7,23 @@ The AWS environment is configured with the following tools and files:
  -  Vitis 2020.2
  -  Vivado 2020.2 
 
-To access it via Putty, you will need to download the following tools beforehand: 
-- (puTTY)[https://www.chiark.greenend.org.uk/~sgtatham/putty/]
-
+The Public IP address will be provided by the workshop admin.
 
 ## Windows
-You want to download WinSCP for Windows file transfer
+Open the "Remote Desktop Connection". 
 
-[WinSCP Downloads](https://winscp.net/eng/download.php)
-
-
-Open WinSCP
-
-When you open WinSCP, you can select SCP for File protocol. 
-
-You will enter in the host name, username, and password as provided by your workshop coordinator. Port 22 is the default port number.
-
-You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
+You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. 
 
 ## Linux & Mac
-For linux & mac, you will use scp
+For linux & mac, you will use remmina.
 
-enter the following command into the terminal: 
-```
-scp [source_username]@[source_IP_address]:[path to file] [path toe destination]
-```
-You will need to enter the password to access the files.
+You will enter the following command to install remmina if you do not have it.
 
-The user name and IP address will be provided by the workshop coordinator
+For Ubuntu
+```
+sudo apt install remmina
+```
+
+If you have a different OS, you can install remmina at the following [link](https://websiteforstudents.com/use-remmina-remote-desktop-client-rdp-on-ubuntu-16-04-18-04-lts/)
+
+
