@@ -104,9 +104,6 @@ Example rtsp link could be the following:
 ffplay rtsp://192.168.1.26:554/test
 ```
 
-The example below shows the command and the video playing: 
-**image** 
-
 ### MIPI DP display
 This command will directly stream your live footage from the camera to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
