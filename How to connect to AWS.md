@@ -16,6 +16,8 @@ Open the "Remote Desktop Connection".
 
 You will enter the public IP address. Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. 
 
+<img src="/images/rdp_debian.JPG" >
+
 ## Linux & Mac
 For linux & mac, you will use Remmina to access a Remote Desktop. 
 
@@ -37,5 +39,8 @@ This will open the RDP as shown below.
 Make sure to select RDP, and then you will enter the IP address as provided by the workshop admin in the following window. 
 
 *Note*: If you have issues with the color depth, please select an option that indicates "True Color"
+
+<img src="/images/rdp_debian.JPG" >
+
 
 <img src="/images/remmina.JPG" >
