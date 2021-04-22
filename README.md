@@ -26,6 +26,7 @@ In this part, you will be diving deeper into AA1, the Smart Camera application. 
 
 ## Part 4: Optional Demo
 This section is optional, and will dive into how to load new models onto the SOM board. 
+
 [Go to Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md)
 
 ## Additional Resources
