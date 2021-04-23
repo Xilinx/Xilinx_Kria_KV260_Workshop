@@ -18,14 +18,23 @@ cd Vitis-AI
 
 If you download the model, you may need to update the model so that the fingerprint between the board and the model match. You can do this by re-compiling the model in Vitis-AI.
 
-Once you have opened Vitis-AI, you will enter in the following commands. You will need to look up the specific framework of your model and then activate that library in Vitis-AI.
+Once you have opened Vitis-AI, you will enter in the following commands. You will need to look up the specific framework of your model and then activate that workflow in Vitis-AI.
 
 ```
 ## Caffe
 conda activate vitis-ai-caffe
 
-## Tensorflow
+## Tensorflow 1.15
 conda activate vitis-ai-tensorflow
+
+## Tensorflow 2.3
+conda activate vitis-ai-tensorflow2 
+
+## Neptune
+conda activate vitis-ai-neptune
+
+## PyTorch
+conda activate vitis-ai-pytorch 
 ```
 
 
