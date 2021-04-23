@@ -13,6 +13,9 @@ You will generate and download the files where you have Vitis-AI installed (loca
 - You will download the .zip file from the following [Model Zoo](https://github.com/Xilinx/Vitis-AI/tree/master/models/AI-Model-Zoo/model-list), choose a model of your choice. 
   - For example, we will look at the **cf_landmark_celeba_96_72_0.14G_1.3**. Select that folder and open the "model.yaml" file.
 - You will copy the URL link under the board: **GPU**. This link will have the float & quantized files that you will use to deploy the model for the SOM. 
+
+<img src="/images/model_yaml.JPG">
+
 - Unzip the files on your local computer or via AWS
 - You will locate the "deploy.prototxt" and "deploy.caffemodel" in the `/<model_name>/quantized` folder. 
 
@@ -23,8 +26,7 @@ cd Vitis-AI
 ```
 
 You will see the following image in the terminal
-
-**image Vitis**
+<img src="/images/Vitis-AI homepage.JPG">
 
 If you download the model, you may need to update the model so that the fingerprint between the board and the model match. You can do this by re-compiling the model in Vitis-AI.
 
@@ -78,7 +80,7 @@ Now we will copy the information/files from Vitis-AI to the SOM board:
 2. Locate the "md5sum.txt" in your netname, and note the string within the file. Copy this string for later.
 
 
-**image** of file folder location
+<img src="/images/update_model_files_folder.JPG">
 
 To update AA1 with a new .xmodel, you will update the following files.
 1. Go to the path
