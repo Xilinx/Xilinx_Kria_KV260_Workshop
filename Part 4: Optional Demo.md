@@ -14,6 +14,21 @@ cd Vitis-AI
 ./docker_run.sh xilinx/vitis-ai-cpu:latest
 ```
 
+**image Vitis**
+
+If you download the model, you may need to update the model so that the fingerprint between the board and the model match. You can do this by re-compiling the model in Vitis-AI.
+
+Once you have opened Vitis-AI, you will enter in the following commands. You will need to look up the specific framework of your model and then activate that library in Vitis-AI.
+
+```
+## Caffe
+conda activate vitis-ai-caffe
+
+## Tensorflow
+conda activate vitis-ai-tensorflow
+```
+
+
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
 
