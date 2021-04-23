@@ -113,13 +113,11 @@ To update AA1 with a new .xmodel, you will update the following files.
     }
 ```
 
-3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.`
+3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.` Make sure that model path has at least "two files of the same name". For example: `/face_landmark/face_landmark/`
 
-**NOTE** make sure that model path has at least "two files of the same name". For example: `/face_landmark/face_landmark/`
+4. Going to the same folder where .xmodel is, update the md5sum.txt file with updated string from m5sum.txt within Vitis-AI.
 
-5. Going to the same folder where .xmodel is, update the md5sum.txt file with update version from above.
-
-After you've down this, you will run through the AA1 workflow as defined in [Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md) or [Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+After you've completed these steps, you will run through the AA1 workflow as defined in [Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md) or [Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
 
 ## Part B: (1-2 hours)
