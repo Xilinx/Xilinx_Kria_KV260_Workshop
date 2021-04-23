@@ -37,6 +37,14 @@ conda activate vitis-ai-neptune
 conda activate vitis-ai-pytorch 
 ```
 
+Locate the quantized folder. 
+
+Then you will run the command: 
+
+```
+vai_c_caffe -p /PATH/TO/deploy.prototxt -c /PATH/TO/deploy.caffemodel -a /
+PATH/TO/arch.json -o /OUTPUTPATH -n netname
+```
 
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
