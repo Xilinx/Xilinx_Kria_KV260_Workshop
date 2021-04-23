@@ -66,6 +66,7 @@ Before continuing, you will want to create an **arch.json** with an updated fing
 
 Then you will run the command, depending on the framework: 
 
+For Caffe
 ```
 vai_c_caffe -p </PATH/TO/deploy.prototxt> -c </PATH/TO/deploy.caffemodel> -a /
 <PATH/TO/arch.json> -o </OUTPUTPATH> -n <netname>
@@ -74,6 +75,14 @@ vai_c_caffe -p </PATH/TO/deploy.prototxt> -c </PATH/TO/deploy.caffemodel> -a /
 - The arch.json file will be the same file you wrote above.
 - Make sure to output the results to a path you can locate
 - netname will be the 'pre-fix' for your output files. 
+
+For Tensoflow
+```
+vai_c_tensorflow --frozen_pb quantize_model/quantize_eval_model.pb \
+ --arch /opt/vitis_ai/compiler/arch/DPUCAHX8H/U50/arch.json \
+ --output_dir compile_model \
+ --net_name resnet50_tf
+```
 
 For example the following command is for employing the **"face_landmark"** model: 
 ```
