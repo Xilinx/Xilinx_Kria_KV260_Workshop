@@ -73,12 +73,47 @@ vai_c_caffe -p cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.prototxt -c c
 -a arch.json -o compile_model -n face_landmark
 ```
 
-Locate the xmodel in the <netname> folder, you will copy this xmodel onto your SD card or scp the xmodel over to the SOM.
-  
-Locate the "md5sum.txt" in your <netname>, and note the text within the file. Copy this text.
+Now we will copy the information/files from Vitis-AI to the SOM board:
+1. Locate the xmodel in the netname folder. You will copy this xmodel onto your SD card or scp the xmodel over to the SOM.
+2. Locate the "md5sum.txt" in your netname, and note the string within the file. Copy this string for later.
 
 
-  
+**image** of file folder location
+
+To update AA1 with a new .xmodel, you will update the following files.
+1. Go to the path
+2. Go to the following path: /opt/xilinx/share/ivas/smartcam/refinedet/aiinference.json
+3. Edit the file via `sudo vi`
+
+```
+  {
+        "ivas-library-repo": "/usr/lib/",
+            "element-mode":"inplace",
+            "kernels" :[
+            {
+                "library-name":"libivas_xdpuinfer.so",
+                "config": {
+                    "model-name" : "refinedet_pruned_0_96",
+                    "model-class" : "REFINEDET",
+                    "model-path" : "/opt/xilinx/share/vitis_ai_library/models/kv260-aibox-reid",
+                    "run_time_model" : false,
+                    "need_preprocess" : false,
+                    "performance_test" : false,
+                    "debug_level" : 0
+                }
+            }
+            ]
+    }
+```
+
+4. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.`
+
+**NOTE** make sure that model path has at least "two files of the same name". For example: `/face_landmark/face_landmark/`
+
+5. Going to the same folder where .xmodel is, update the md5sum.txt file with update version from above.
+
+After you've down this, you will run through the AA1 workflow as defined in [Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md) or [Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+
 
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
