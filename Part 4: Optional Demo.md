@@ -7,12 +7,22 @@ As you have seen that there are three AI models provided here via –aitask comm
 There are other AI models that you can use as listed [here](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html): 
 
 ## Part A: (30 minutes)
-Here are some compiled files needed to update the models
 
+You will generate and download the files where you have Vitis-AI installed (locally or via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md). 
+
+- You will download the .zip file from the following [Model Zoo](https://github.com/Xilinx/Vitis-AI/tree/master/models/AI-Model-Zoo/model-list), choose a model of your choice. 
+  - For example, we will look at the **cf_landmark_celeba_96_72_0.14G_1.3**. Select that folder and open the "model.yaml" file.
+- You will copy the URL link under the board: **GPU**. This link will have the float & quantized files that you will use to deploy the model for the SOM. 
+- Unzip the files on your local computer or via AWS
+- You will locate the "deploy.prototxt" and "deploy.caffemodel" in the `/<model_name>/quantized` folder. 
+
+Next, we will open it in Vitis-AI via terminal. 
 ```
 cd Vitis-AI
 ./docker_run.sh xilinx/vitis-ai-cpu:latest
 ```
+
+You will see the following image in the terminal
 
 **image Vitis**
 
@@ -39,18 +49,36 @@ conda activate vitis-ai-pytorch
 
 Locate the quantized folder. 
 
-Then you will run the command: 
+Before continuing, you will want to create an **arch.json** with an updated fingerprint. Write the json file as below:
+```
+{
+    "fingerprint":"0x1000020F6014406"
+}
+```
+
+Then you will run the command, depending on the framework: 
 
 ```
-vai_c_caffe -p /PATH/TO/deploy.prototxt -c /PATH/TO/deploy.caffemodel -a /
-PATH/TO/arch.json -o /OUTPUTPATH -n netname
+vai_c_caffe -p </PATH/TO/deploy.prototxt> -c </PATH/TO/deploy.caffemodel> -a /
+<PATH/TO/arch.json> -o </OUTPUTPATH> -n <netname>
 ```
+- The deploy.prototxt and deploy.caffemodel will be from the zip files.
+- The arch.json file will be the same file defined above
+- Make sure to output the results to a path you can locate
+- netname will be the 'pre-fix' for your output files. 
 
 For example the following command is for employing the **"face_landmark"** model: 
 ```
 vai_c_caffe -p cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.prototxt -c cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.caffemodel 
 -a arch.json -o compile_model -n face_landmark
 ```
+
+Locate the xmodel in the <netname> folder, you will copy this xmodel onto your SD card or scp the xmodel over to the SOM.
+  
+Locate the "md5sum.txt" in your <netname>, and note the text within the file. Copy this text.
+
+
+  
 
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
