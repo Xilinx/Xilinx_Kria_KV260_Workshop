@@ -12,8 +12,7 @@ But the customization can be made to use other Vitis AI models of the same class
 There are other AI models that you can use as listed [here](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html): 
 
 ## Part A: (30 minutes)
-
-You will generate and download the files where you have Vitis-AI installed (locally or via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md). 
+You will want to generate and donwload the updated model files where you have Vitis-AI installed (locally or via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md). 
 
 - You will download the .zip file from the following [Model Zoo](https://github.com/Xilinx/Vitis-AI/tree/master/models/AI-Model-Zoo/model-list), choose a model of your choice. 
   - For example, we will look at the **cf_landmark_celeba_96_72_0.14G_1.3**. Select that folder and open the "model.yaml" file.
