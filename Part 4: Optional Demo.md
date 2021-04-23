@@ -71,7 +71,7 @@ vai_c_caffe -p </PATH/TO/deploy.prototxt> -c </PATH/TO/deploy.caffemodel> -a /
 <PATH/TO/arch.json> -o </OUTPUTPATH> -n <netname>
 ```
 - The deploy.prototxt and deploy.caffemodel will be from the zip files.
-- The arch.json file will be the same file defined above
+- The arch.json file will be the same file you wrote above.
 - Make sure to output the results to a path you can locate
 - netname will be the 'pre-fix' for your output files. 
 
