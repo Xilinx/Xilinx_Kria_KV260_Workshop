@@ -46,6 +46,12 @@ vai_c_caffe -p /PATH/TO/deploy.prototxt -c /PATH/TO/deploy.caffemodel -a /
 PATH/TO/arch.json -o /OUTPUTPATH -n netname
 ```
 
+For example the following command is for employing the **"face_landmark"** model: 
+```
+vai_c_caffe -p cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.prototxt -c cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.caffemodel 
+-a arch.json -o compile_model -n face_landmark
+```
+
 ## Part B: (1-2 hours)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
 
