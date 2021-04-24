@@ -98,7 +98,7 @@ Now we will copy the information/files from Vitis-AI to the SOM board:
 <img src="/images/update_model_files_folder.JPG">
 
 To update AA1 with a new .xmodel, you will update the following files.
-1. Go to the following path: /opt/xilinx/share/ivas/smartcam/refinedet/aiinference.json
+1. Go to the following path: /opt/xilinx/share/ivas/smartcam/facedetect/aiinference.json
 2. Edit the file via `sudo vi`
 
 ```
