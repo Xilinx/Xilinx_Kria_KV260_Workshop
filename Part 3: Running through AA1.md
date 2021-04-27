@@ -114,7 +114,14 @@ Instead of streaming it online, we will stream the footage from the camera to an
 
 
 ### AI Tasks
-If you want to perform AI-inference on your video feed (live or recorded), you can add an AI task. You can either stream this through the RTSP server on via the monitor. The example below uses the RTSP server and Refinedet ai task, but you could use either "facedetect" ( `-a facedetect`) or "sdd (`-a ssd`)
+If you want to perform AI-inference on your video feed (live or recorded), you can add an AI task. 
+
+AA1 comes with three different options for AI tasks:
+1. facedetect
+2. ssd 
+3. refinedet
+
+You can either stream this through the RTSP server on via the monitor. The example below uses the RTSP server and Refinedet ai task, but you could use either "facedetect" ( `-a facedetect`) or "sdd (`-a ssd`)
 
 Enter the following command in the terminal:
 ```
@@ -134,14 +141,7 @@ This command will take a pre-existing video file and stream it onto your monitor
 
 
 ### File to DP
-This will take a pre-existing video file and display it to the monitor. In this example, we will add the ```--aitask``` command to perform an AI task to run. 
-
-AA1 comes with three different options for AI tasks:
-1. facedetect
-2. ssd 
-3. refinedet
-
-We will specifically run ssd, which will display detection bounding boxes in red with green labels.
+This will take a pre-existing video file and display it to the monitor. In this example, we will run ssd, which will display detection bounding boxes in red with green labels.
 
 1. Type the command `sudo 04.file-ssd-dp.sh` Or you can enter the command `smartcam --file ${file.h264} --target dp -r 30 --aitask ssd`
 2. Identify the 1st argument **${file}** from the script output as a path to the video file.
