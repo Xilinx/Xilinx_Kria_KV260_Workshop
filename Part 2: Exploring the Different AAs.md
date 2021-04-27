@@ -72,7 +72,7 @@ sudo smartcam --mipi 0 -W 1920 -H 1080
 
 Otherwise you can use a USB camera with this command:
 ```
-sudo smartcam --usb 0 -W 1920 -H 1080
+sudo smartcam --usb 1 -W 1920 -H 1080
 ```
 
 If you have an HDMI or DP monitor connected to the board, you will see a similar image appear on your screen. The footage will show faces wrapped in a blue bounding box.
