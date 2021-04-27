@@ -22,9 +22,10 @@ There are a number of tests you can perform with the smart camera:
 
 1. Throughput Measurement (Frames per Second)
 
-Enter the following command to display the FPS in the terminal. In the example below, it reads around 49 FPS. 
+Enter the following command to display the FPS in the terminal. The `-r 30` specifies a framerate of 30, while the `-R` command will report the frames per second.  In the example below, it reads around 49 FPS.
+
 ```
-sudo smartcam --file ${file.h264} -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect -R
+sudo smartcam --file ${file.h264} -i h264 -r 30 --target dp --aitask facedetect -R
 ```
 where `${file.h264}` is the path to your h264 video file.
 
@@ -79,14 +80,14 @@ cd /opt/xilinx/bin
 ls -ll
 ```
 
-### MIPI RTSP server
-This command will stream the live video feed from the camera to an rtsp server, on which other users can see the footage if they have access to the rtsp link.
+### Different Targets - RTSP server
+In this section, we will stream the live video feed from the camera to a different targets such as dp, rtsp, or file. For an rtsp server, other people can see the footage if they have access to the rtsp link.
 
 1. Type the command `sudo 01.mipi-rtsp.sh` to start rtsp server for MIPI captured images. Alternatively, you can enter the following command: 
 ```
-smartcam --mipi -t rtsp
+smartcam --mipi -t rtsp -W 1920 -H 1080
 ```
-This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You can specify the width and height of the monitor via `-w` and `-h` commands. Otherwise, it will default to 1920 x 1080.
+This will utilize the AR1335 camera or "mipi" device and stream via RTSP. You can specify the width and height of the monitor via `-W` and `-H` commands. Otherwise, it will default to 1920 x 1080.
 
 2. After running the script, the following message will appear:
 <img src="/images/rtsp stream.JPG">
@@ -104,12 +105,28 @@ Example rtsp link could be the following:
 ffplay rtsp://192.168.1.26:554/test
 ```
 
-### MIPI DP display
-This command will directly stream your live footage from the camera to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
+You could also display the frames per second on the screen by adding the `-s` command as in the example below: 
+```
+smartcam --mipi -t rtsp -W 1920 -H 1080 -s
+```
+
+
+### Different Targets - DP monitor
+Instead of streaming it online, we will stream the footage from the camera to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
 1. Check that your monitor (HDMI or DP) is connected
 2. Type the command `sudo 02.mipi-dp.sh` to the captured video with detection results (blue bonding boxes) onto your monitor. Or you can enter the command `smartcam --mipi --target dp`
 3. To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face.
+
+
+### AI Tasks
+If you want to perform AI-inference on your video feed (live or recorded), you can add an AI task. You can either stream this through the RTSP server on via the monitor. The example below uses the RTSP server and Refinedet ai task, but you could use either "facedetect" ( `-a facedetect`) or "sdd (`-a ssd`)
+
+Enter the following command in the terminal:
+```
+sudo smartcam --mipi -t rtsp -a refindet
+```
+
 
 ### File to File
 This command will take a pre-existing video file and stream it onto your monitor.
