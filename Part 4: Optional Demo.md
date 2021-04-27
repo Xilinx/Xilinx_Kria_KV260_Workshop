@@ -7,9 +7,10 @@ As you have seen that there are three AI models provided here via `–aitask` co
 -  refinedet (refinedet_pruned_0_96)
 -  ssd (ssd_adas_pruned_0_95) 
   
-But the customization can be made to use other Vitis AI models of the same class or use the retrained models by the users.
+Currently there are a limited number of Vitis AI models that can be used for the SOM board.  
 
-There are other AI models that you can use as listed [here](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html): 
+
+
 
 ## Part A: (30 minutes)
 You will want to generate and donwload the updated model files where you have Vitis-AI installed (locally or via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md))
