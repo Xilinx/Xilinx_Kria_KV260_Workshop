@@ -129,7 +129,8 @@ sudo smartcam --mipi -t rtsp -a refindet
 ```
 
 ### File to File
-This command will take a pre-existing video file and stream it onto your monitor.
+This command will take a pre-existing video file on the SD card and stream it onto your monitor. You will want to transfer over any video files that you want to test it on before continuing. You can copy it over directly or use scp to move video files to the SOM. 
+
 1. Type the command `sudo 03.file-to-file.sh`. Or you can enter the command: `smartcam --file ${file.h264} --infile-type h264 --target file`. 
 
 2. Identify the 1st argument **${file}** from the script output as a path to the video file.
