@@ -105,12 +105,6 @@ Example rtsp link could be the following:
 ffplay rtsp://192.168.1.26:554/test
 ```
 
-You could also display the frames per second on the screen by adding the `-s` command as in the example below: 
-```
-smartcam --mipi -t rtsp -W 1920 -H 1080 -s
-```
-
-
 ### Different Targets - DP monitor
 Instead of streaming it online, we will stream the footage from the camera to an HDMI or DP monitor. This is useful if you have a larger monitor to show to a group of people. 
 
@@ -126,7 +120,6 @@ Enter the following command in the terminal:
 ```
 sudo smartcam --mipi -t rtsp -a refindet
 ```
-
 
 ### File to File
 This command will take a pre-existing video file and stream it onto your monitor.
@@ -156,6 +149,18 @@ We will specifically run ssd, which will display detection bounding boxes in red
 3. This video output can be used for ADAS SSD demos to add detection bounding box, and display it to a monitor like the image below
 
 <img src="/images/AA1_file_to_DP.gif">
+
+### Additional settings
+You can specify some more features for AA1 such as audio or displaying the frames per second on the screen.
+
+For audio, you can invoke the following command to stream your video with audio:
+```
+sudo smartcam --mipi -W 1920 -H 1080 --target rtsp --audio
+```
+For displaying the frames per second on the screen, you can add the `-s` command as in the example below: 
+```
+smartcam --mipi -t rtsp -W 1920 -H 1080 -s
+```
 
 
 ### Mix and match
