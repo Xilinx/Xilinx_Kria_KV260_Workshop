@@ -18,8 +18,7 @@ You can click on the following links for [Windows](https://github.com/Xilinx/Xil
 - Ethernet cable
 - HDMI/DI cable (optional) to connect a monitor display
 
-You can purchase all these items with the [KV260 Basic Accessory Pack](https://www.author.uat.xilinx.com/products/som/kria/kv260-vision-starter-kit/basic-accessory-pack.html)
-
+You can purchase all these items with the [KV260 Basic Accessory Pack](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/basic-accessory-pack.html)
 
 ## Xilinx Tools needed to Boot via SD card
 You will need the following tools installed on your computer or you can access the Xilinx specific tools via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md) in order to boot via SD card
