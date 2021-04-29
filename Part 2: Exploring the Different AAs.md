@@ -9,13 +9,11 @@ After the boot, you will observe the green heart LED flashing along the SOM fan 
 
 <img src="/images/led.gif" width= 300 height =300>
 
-In your terminal, you will see a Linux window boot open, and once it has finished booting, you can log in via username is *root*, and the password is *root*.
-
-You can then enter the following commands to execute the Smart Camera Application after you see the following window appear:
+In your terminal, you will see a Linux window boot open, and once it has finished booting, you can log in via username is *root*, and the password is *root*. The SOM board will be ready when you see the following window appear:
 
 <img src="/images/som_console.JPG">
 
-After the Linux window has booted, we will now explore the different AAs available on the SOM board. 
+We will now explore the different AAs available on the SOM board. 
 
 ## Installing Accelerated Application packages
 You can use `xmutil listapps` to see what applications exist. 
