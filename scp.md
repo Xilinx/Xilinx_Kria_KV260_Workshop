@@ -10,7 +10,6 @@ You want to download [WinSCP](https://winscp.net/eng/download.php) for Windows f
 <img src="/images/winscp_image1.JPG">
 
 4. You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
-<img src="/images/winscp_image1.JPG">
 
 Note the hello.txt file in both windows:
 <img src="/images/winscp_image3.JPG">
