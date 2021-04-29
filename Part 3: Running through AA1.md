@@ -70,11 +70,9 @@ grep -rn interlatency facedetect-log.txt | tail -n 20 | cut -d'=' -f2-4
 
 ## Exploring different features of AA1
 
-There are many applications and features to utilize and explore through AA1. You can source any of the .sh scripts below and observe the output. These scripts performs face detection and cars, bicycles, and person detection for ADAS using smart camera application.
+There are many applications and features to utilize and explore through AA1. You can source any of the .sh scripts below and observe the output. You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both methods so you can see what is happening in the scripts.
 
-You can either type out the commands yourself or you can utilize one of the pre-written scripts. Please try both methods so you can see what is happening in the scripts.
-
-The scripts are located in the following directory `/opt/xilinx/bin`. Use the following commands to access and see the directory:
+The .ssh scripts are located in the following directory `/opt/xilinx/bin`. Use the following commands to access and see the directory:
 ```
 cd /opt/xilinx/bin
 ls -ll
