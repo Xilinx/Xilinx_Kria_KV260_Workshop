@@ -1,4 +1,4 @@
-# Part 3: Running through AA1
+# Part 3: Running through AA1 (45 min - 1 hr)
 
 # FAQ
 If you are having any issues, you can refer to the [FAQ](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/FAQ.md) to help you resolve any issues.
