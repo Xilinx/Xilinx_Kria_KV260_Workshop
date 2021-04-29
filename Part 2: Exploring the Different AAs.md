@@ -9,7 +9,7 @@ After the boot, you will observe the green heart LED flashing along the SOM fan 
 
 <img src="/images/led.gif" width= 300 height =300>
 
-In Tera Term, you will see a Linux window boot open, and you can log in via username is *root*, and the password is *root*.
+In your terminal, you will see a Linux window boot open, and once it has finished booting, you can log in via username is *root*, and the password is *root*.
 
 You can then enter the following commands to execute the Smart Camera Application after you see the following window appear:
 
