@@ -20,7 +20,7 @@ If you are having any issues, you can refer to the [FAQ](https://github.com/Xili
 - Ethernet cable
 - HDMI/DI cable (optional) to connect a monitor display
 
-You can purchase all these items with the [KV260 Basic Accessory Pack](https://www.author.uat.xilinx.com/products/som/kria/kv260-vision-starter-kit/basic-accessory-pack.html)
+You can purchase all these items with the [KV260 Basic Accessory Pack](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/basic-accessory-pack.html)
 
 
 ## Xilinx Tools needed to Boot via SD card
