@@ -24,8 +24,8 @@ You can purchase all these items with the [KV260 Basic Accessory Pack](https://w
 
 
 ## Xilinx Tools needed to Boot via SD card
-You will need the following tools installed on your computer or you can access the Xilinx specific tools via [AWS]() in order to boot via SD card
-|Locally|Via [AWS]()|
+You will need the following tools installed on your computer or you can access the Xilinx specific tools via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md) in order to boot via SD card
+|Locally|Via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md)|
 | --- | --- |
 | [Putty](https://www.putty.org/) and or [Tera Term](https://ttssh2.osdn.jp/index.html.en) Terminal <br> (click on the link to download an application terminal)| - Vivado & Vitis to update hardware or model <br> - Petalinux (2020.2 or later)|
 
