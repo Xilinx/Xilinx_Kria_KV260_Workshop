@@ -114,7 +114,7 @@ Instead of streaming it online, we will stream the footage from the camera to an
 ### AI Tasks
 If you want to perform AI-inference on your video feed (live or recorded), you can add an AI task. 
 
-AA1 comes with three different options for AI tasks:
+AA1 comes with three preloaded options for AI tasks:
 1. facedetect
 2. ssd 
 3. refinedet
