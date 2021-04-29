@@ -35,7 +35,7 @@ sudo dnf install packagegroup-kv260-defect-detect.noarch
 ```
 
 # Converting & Loading video files to SOM
-You can use the camera for the SOM, or you can also source from a video file.
+SOM has many methods of streaming video feeds: you can utilize an mipi or USB camera, or you can also source from a local video file installed on the SD card.
 
 You can use one of your own videos, or you can download any of the demo videos provided: 
  - [Facedet / RefineDet AI Task Video](https://pixabay.com/videos/alley-people-walk-street-ukraine-39837/)
