@@ -45,3 +45,11 @@ Make sure to select RDP, and then you will enter the IP address as provided by t
 Afterwards, you will login into the Debian account with the username and password provided by the workshop admin. You will now be able to access the Xilinx tools and files during this workshop session.
 
 <img src="/images/rdp_debian.JPG" >
+
+## Go to next session
+Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
+Go to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
+Go to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
+Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+Go to [Part 4](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) 
+
