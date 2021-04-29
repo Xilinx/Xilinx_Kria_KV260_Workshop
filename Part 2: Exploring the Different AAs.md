@@ -16,7 +16,7 @@ In your terminal, you will see a Linux window boot open, and once it has finishe
 We will now explore the different AAs available on the SOM board. 
 
 ## Installing Accelerated Application packages
-You can use `xmutil listapps` to see what applications exist. 
+You can enter the command `xmutil listapps`  in the terminal to see what applications exist. 
 
 <img src="/images/xmutil_listapps.JPG" width = 600 height = 200 >
 
