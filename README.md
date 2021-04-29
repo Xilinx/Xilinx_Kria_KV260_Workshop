@@ -1,9 +1,9 @@
 # Xilinx KV260 Workshop
 <img src="/images/xilinx-kria-color-cmyk-logo.jpg" width = 200 height = 100>
 
-This repository is designed to set up the KV260 Starter kit board and then run Accelerated Applications (AA) on the SOM board. Working through each section will help you learn how to integrate Xilinx carrier card with some AI and Smart Camera applications. You can take what you've learned here to your own projects and applications. 
+This repository is designed to set up the KV260 Starter kit board, and then run Accelerated Applications (AA) on the SOM board. In each section, you will learn how to integrate Xilinx SOM board with AI and Smart Camera applications. You can take what you've learned here to your own projects and applications.
 
-The KV 260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, integrated power solution, and security module. The vision-focused SOM carrier card includes various application peripheral options such as camera, sensor inputs, video display outputs, USB, SD card, and Ethernet interfaces.
+The KV260 incorporates a Zynq® UltraScale+™ MPSoC, run-time memory, non-volatile boot devices, integrated power solution, and security module. The vision-focused SOM carrier card includes various application peripheral options such as camera, sensor inputs, video display outputs, USB, SD card, and Ethernet interfaces.
 
 ## Part 1: Setup Board
 In this part, you will connect the cables, camera, and SD card to the board and boot the SOM via pre-installed image. The terminal will open automatically when everything is connected.
@@ -14,7 +14,7 @@ Go to Part 1:
  - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
  
 ## Part 2: Exploring the Different AAs
-In this part, you will see the various Accelerated Applications available on the SOM board. We will explore smart camera, AI box, and Defect Detection.
+In this part, you will see the various Accelerated Applications available on the SOM board. We will explore smart camera, AI box, and Defect Detection (coming soon).
 
 [Go to Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
