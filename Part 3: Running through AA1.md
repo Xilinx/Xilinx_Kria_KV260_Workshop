@@ -100,7 +100,7 @@ To check the test, you should see images on the ffplay window, and there should 
 
 Example rtsp link could be the following:
 ```
-ffplay rtsp://192.168.1.26:554/test
+ffplay rtsp:/<ip address>:554/test
 ```
 
 ### Different Targets - DP monitor
