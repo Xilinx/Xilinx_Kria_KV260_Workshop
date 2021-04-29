@@ -53,7 +53,7 @@ After the files have been converted, you can copy them directly to your SD card.
 If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
 
 ## AA1: Smart Camera
-This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
+This application supports camera and sensor input options with accelerated Machine Learning inference, and is able to perform **face detection** using densebox_640_360 network and detect **cars, bicycles, and people** using ssd_adas_pruned_0_95 network model. 
 
 ### Loading application
 You can connect to the AA1 via the following commands:
