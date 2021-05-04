@@ -7,6 +7,8 @@ You want to download [WinSCP](https://winscp.net/eng/download.php) for Windows f
 2. When you open WinSCP, you can select SCP for File protocol. 
 3. You will enter in the host name, username, and password as provided by your workshop coordinator. Port 22 is the default port number.
 
+NOTE: the hostname will usually be the IP address of the computer or the SOM board. You can use ipconfig (for Windows) or ifconfig(for Linux/Mac/SOM board) to determine the IP address.
+
 <img src="/images/winscp_image1.JPG">
 
 4. You can transfer the files by selecting the desired file and dragging it over to the desired window. This will transfer the file via SCP.
