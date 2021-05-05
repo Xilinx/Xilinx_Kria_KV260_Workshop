@@ -41,7 +41,7 @@ Please refer to the links below to learn more about the SOM carrier card, how to
 
 ## Copyright
 
-(c) Copyright 2021 Xilinx, Inc. All rights reserved.
+(c) &copy Copyright 2021 Xilinx, Inc. All rights reserved.
 
 This file contains confidential and proprietary information
 of Xilinx, Inc. and is protected under U.S. and
