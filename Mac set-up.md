@@ -49,7 +49,8 @@ Use `diskutil eject /dev/disk3` to eject the SD card.
 -	Insert the microSD card with boot image into the microSD card slot (J11)
 -	Connect micro-USB cable, with the micro-B end into J4 connection. 
 -	Connect the IAS camera module (AR 1335) or plug the USB camera into U44 or U46. 
--	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6.  
+-	Optionally, you can also connect the HDMI cable into J5 or the DisplayPort cable into J6. 4K monitor is preferred to demonstrate at the maximum supported resolution. 
+-	Optionally, you can capture audio on the SOM board with an Audio Pmod setup in RTSP mode. You can connect an audio Pmod to J2, and then connect a microphone or any other [sound input device](https://store.digilentinc.com/pmod-i2s2-stereo-audio-input-and-output/). NOTE: smart camera does not support speakers. 
 
 You can refer to the following image to pinpoint the interfaces and connectors on the SOM carrier card: 
 
