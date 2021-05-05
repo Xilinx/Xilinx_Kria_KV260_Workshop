@@ -39,7 +39,7 @@ Please refer to the links below to learn more about the SOM carrier card, how to
  - Please visit Xilinx's [website](https://www.xilinx.com/about/company-overview.html) to learn more about the company and industrial products
  
 
-## Copyright
+## Copyright ## 
 -- (c) Copyright 2021 Xilinx, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
