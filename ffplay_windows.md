@@ -1,6 +1,6 @@
 # How to install ffplay on Windows
 
-To download the files for ffplay go to the following link: [FFmpeg](https://ffmpeg.org/download.html#build-windows)
+To download the files for ffplay, go to the following link: [FFmpeg](https://ffmpeg.org/download.html#build-windows)
 
 <img src="/images/ffmpeg_install.JPG">
 
