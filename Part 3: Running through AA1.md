@@ -98,6 +98,8 @@ You can stream this rtsp in different ways depending on your OS
 
 NOTE: if you want to use ffplay for Windows, you can go to the following link to download the file: [FFmpeg](https://ffmpeg.org/download.html#build-windows)
 
+You can follow these instructions to dive deeper into FFmpeg installation for [Windows]()
+
 To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
 
 Example rtsp link could be the following:
