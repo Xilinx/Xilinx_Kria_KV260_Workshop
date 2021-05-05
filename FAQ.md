@@ -38,4 +38,19 @@ This table lists out potential issues you may encounter, and how to resolve them
 |- `ERROR: memory leak` <br> - `xlnx_snd_card xlnx_snd_card.1.auto: ASoC: failed to init link xilinx-i2s_playback: -517` <br> - `xlnx_snd_card xlnx_snd_card.1.auto: xlnx-i2s-snd-card-0 registration failed`| These are Benign Errors messages|
 |RTSP stream doesn't play or work on my system| When using VLC to play the RTSP stream sent out by the application, sometimes it doesn't work on some client machines, while the FFplay works well|
 
+## Return to workshop sessions
+Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
+
+Go to Part 1
+ - [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
+ - [Linux](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Linux%20set-up.md)
+ - [Mac](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Mac%20set-up.md)
+
+
+Go to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
+
+Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
+
+Go to [Part 4: Optional Demo](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) 
+
 
