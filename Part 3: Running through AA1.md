@@ -6,16 +6,12 @@ If you are having any issues, you can refer to the [FAQ](https://github.com/Xili
 If you are unsure how to use scp command for Windows, Linux, or Mac, please refer to these [instructions](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/scp.md) 
 
 ## Using Jupyter Notebook 
-You can use a web-browser notebook to interact with the SOM board.
+You can use a web-browser notebook to interact with the SOM board. To launch the Jupyter notebook, enter the following command in the terminal. This will list the link to the notebook.
+
 ```
 $ jupyter-lab --ip=ip-address & 
 // fill in ip-address from the ifconfig command
 ```
-
-You will see the link to the Jupyter notebook listed. 
-
-To launch the Jupyter notebook, enter the following command in the terminal.
-
 
 To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
 
