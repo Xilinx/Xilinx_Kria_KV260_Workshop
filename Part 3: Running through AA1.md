@@ -7,6 +7,16 @@ If you are unsure how to use scp command for Windows, Linux, or Mac, please refe
 
 ## Using Jupyter Notebook 
 You can use a web-browser notebook to interact with the SOM board.
+```
+$ jupyter-lab --ip=ip-address & 
+// fill in ip-address from the ifconfig command
+```
+
+You will see the link to the Jupyter notebook listed. 
+
+To launch the Jupyter notebook, enter the following command in the terminal.
+
+
 To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
 
 <img src="/images/Jupyter_console.JPG">
