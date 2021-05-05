@@ -96,6 +96,8 @@ You can stream this rtsp in different ways depending on your OS
 | ------------- | ------------- |
 | Enter the network address provided by the AA1 output into any of video media platform: <br> - QuickTime <br> -Winamp <br> - VLC <br> - Windows Media Player (Windows only) | - Run "ffplay rtsp://boardip:port/test" on a Linux system to view the rtsp stream. <br> - If you don't have "ffplay" on your computer, you will need to install it with `sudo apt install ffmpeg`|
 
+NOTE: if you want to use ffplay for Windows, you can go to the following link to download the file: [FFmpeg](https://ffmpeg.org/download.html#build-windows)
+
 To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
 
 Example rtsp link could be the following:
