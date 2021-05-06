@@ -88,3 +88,6 @@ Plug USB cable connected into J4 into your local computer and proceed to the nex
 Go to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
+
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
