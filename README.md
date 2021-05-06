@@ -38,5 +38,5 @@ Please refer to the links below to learn more about the SOM carrier card, how to
  - Learn more about the [Commercial SOM](https://www.xilinx.com/products/som/kria/k26c-commercial.html) or [Industrial SOM](https://www.xilinx.com/products/som/kria/k26i-industrial.html)
  - Please visit Xilinx's [website](https://www.xilinx.com/about/company-overview.html) to learn more about the company and industrial products
  
-
+------------------------------------------------------
 &copy; Copyright 2021 Xilinx, Inc. All rights reserved.
