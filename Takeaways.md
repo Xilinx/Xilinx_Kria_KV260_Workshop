@@ -17,3 +17,6 @@ You can go to the following links to find more information:
  - Please visit Xilinx's [website](https://www.xilinx.com/about/company-overview.html) to learn more about the company and industrial products
  
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
+
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
