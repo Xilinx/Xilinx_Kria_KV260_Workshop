@@ -104,7 +104,7 @@ You can stream this rtsp in different ways depending on your OS
 
 NOTE: if you want to use ffplay for Windows, you can go to the following link to download the file: [FFmpeg](https://ffmpeg.org/download.html#build-windows). You can follow these instructions to dive deeper into FFmpeg installation for [Windows](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/ffplay_windows.md)
 
-To check the test, you should see images on the ffplay window, and there should be blue box drawn around the face, and the box should follow the movement of the face. 
+To see the rtsp link, you can either use one of the applications listed above, or you can use the terminal to play the ffplay. The example below will work with Linux or with Windows (with ffplay installed). The video feed should have blue boxes drawn around faces, and the box should follow the movement of the face. 
 
 Example rtsp link could be the following:
 ```
