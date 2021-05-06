@@ -175,3 +175,6 @@ Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Works
 Return to [Part 1: Setup Board](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%201:%20Setup%20Board.md)
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
+
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
