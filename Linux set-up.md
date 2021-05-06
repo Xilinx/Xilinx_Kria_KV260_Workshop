@@ -94,3 +94,5 @@ Go to [Part 2: Exploring the Different AAs](https://github.com/Xilinx/Xilinx_KV2
 
 Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
 
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
