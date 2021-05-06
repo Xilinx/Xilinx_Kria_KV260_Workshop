@@ -143,3 +143,6 @@ Return to [Main Page](https://github.com/Xilinx/Xilinx_KV260_Workshop)
 Model Download
 Please visit model-list in this page. You will get downloadlink and MD5 of all the released models, including pre-compiled models running on different platforms. 
 [List of models](https://github.com/Xilinx/Vitis-AI/tree/master/models/AI-Model-Zoo/model-list)
+
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
