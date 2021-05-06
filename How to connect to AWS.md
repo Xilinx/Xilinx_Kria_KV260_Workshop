@@ -61,3 +61,5 @@ Go to [Part 3: Running through AA1](https://github.com/Xilinx/Xilinx_KV260_Works
 
 Go to [Part 4: Optional Demo](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%204:%20Optional%20Demo.md) 
 
+------------------------------------------------------
+&copy; Copyright 2021 Xilinx, Inc. All rights reserved.
