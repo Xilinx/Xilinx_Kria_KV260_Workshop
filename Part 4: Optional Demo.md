@@ -7,8 +7,7 @@ As you have seen that there are three AI models provided here via `–aitask` co
 -  refinedet (refinedet_pruned_0_96)
 -  ssd (ssd_adas_pruned_0_95) 
   
-Currently there are a limited number of Vitis AI models that can be used for the SOM board.  
-On the model zoo site, please locate one of the three model types from this [library](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html#tgh1565815780213)
+Currently there are a limited number of Vitis AI models that can be used for the SOM board. On the model zoo site, please locate one of the three model types from this [library](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html#tgh1565815780213)
  - Face Detection
  - SSD Detection
  - RefineDet Detection
