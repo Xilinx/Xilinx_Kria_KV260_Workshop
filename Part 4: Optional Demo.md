@@ -93,13 +93,12 @@ vai_c_caffe -p ssd_pedestrian_pruned_0_97/quantized/deploy.prototxt -c ssd_pedes
 ```
 
 Now we will copy the information/files from Vitis-AI to the SOM board:
-1. Locate the xmodel in the netname folder. You will copy this xmodel onto your SD card or scp the xmodel over to the SOM.
-2. Locate the "md5sum.txt" in your netname, and note the string within the file. Copy this string for later.
+1. Locate the xmodel in the netname folder. You will copy this xmodel onto your SD card or scp the xmodel over to the SOM. 
+2. Place the three/four files (xmodel, prototxt, md5sum file, and/or label.json file) into the following path: `/opt/xilinx/share/vitis_ai_library/models/kv260-smartcam`. This will swap the model only for the smartcam. If you want to update the AA2 models, you will update the `kv260-smartcam` to `kv-aibox-reid`.
+3. Locate the "md5sum.txt" in your netname folder, and note the string within the file. Copy this string for later.
 
-
-<img src="/images/update_model_files_folder.JPG">
-
-To update AA1 with a new .xmodel, you will update the following files.
+## To use the new model for AA1
+To use AA1 with a new .xmodel, you will update the following files.
 1. Go to the following path: /opt/xilinx/share/ivas/smartcam/facedetect/aiinference.json
 2. Edit the file via `sudo vi`
 
@@ -113,7 +112,7 @@ To update AA1 with a new .xmodel, you will update the following files.
                 "config": {
                     "model-name" : "refinedet_pruned_0_96",
                     "model-class" : "REFINEDET",
-                    "model-path" : "/opt/xilinx/share/vitis_ai_library/models/kv260-aibox-reid",
+                    "model-path" : "/opt/xilinx/share/vitis_ai_library/models/kv260-smartcam",
                     "run_time_model" : false,
                     "need_preprocess" : false,
                     "performance_test" : false,
@@ -124,14 +123,14 @@ To update AA1 with a new .xmodel, you will update the following files.
     }
 ```
 
-3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.` Make sure that model path has at least "two files of the same name". For example: `/face_landmark/face_landmark/`
+3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.` In most cases, the path will stay the same
 
 4. Going to the same folder where .xmodel is, update the md5sum.txt file with updated string from m5sum.txt within Vitis-AI.
 
 After you've completed these steps, you will run through the AA1 workflow as defined in [Part 2](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%202:%20Exploring%20the%20Different%20AAs.md) or [Part 3](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Part%203:%20Running%20through%20AA1.md)
 
 
-## Part B: (1-2 hours)
+## Part B: (1-2 hours - coming soon)
 Instead of providing the files from Part A, you will be compiling the files yourself. 
 
 Jump to [summary](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/Takeaways.md) slide
