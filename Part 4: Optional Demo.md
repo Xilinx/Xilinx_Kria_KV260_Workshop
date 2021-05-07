@@ -64,6 +64,7 @@ Before continuing, you will want to create an **arch.json** with an updated fing
 }
 ```
 
+### Compiling the model within Vitis-AI
 Then you will run the command, depending on the framework: 
 
 ```
@@ -87,10 +88,10 @@ vai_c_xir -x /PATH/TO/quantized.xmodel -a /PATH/TO/arch.json -o /OUTPUTPATH -n n
 - netname will be the 'pre-fix' for your output files. 
 
 
-For example the following command is for employing the **"face_landmark"** model: 
+For example the following command is for employing the **"ssd_pedestrian_pruned_0_97"** model: 
 ```
-vai_c_caffe -p cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.prototxt -c cf_landmark_celeba_96_72_0.14G_1.3/quantized/deploy.caffemodel 
--a arch.json -o compile_model -n face_landmark
+vai_c_caffe -p ssd_pedestrian_pruned_0_97/quantized/deploy.prototxt -c ssd_pedestrian_pruned_0_97/quantized/deploy.caffemodel 
+-a arch.json -o compile_model -n ssd_pedestrian_pruned_0_97
 ```
 
 Now we will copy the information/files from Vitis-AI to the SOM board:
