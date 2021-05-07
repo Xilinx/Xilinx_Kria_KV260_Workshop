@@ -93,9 +93,9 @@ vai_c_caffe -p ssd_pedestrian_pruned_0_97/quantized/deploy.prototxt -c ssd_pedes
 ```
 
 Now we will copy the information/files from Vitis-AI to the SOM board:
-1. Locate the xmodel in the netname folder. You will copy this xmodel onto your SD card or scp the xmodel over to the SOM. 
-2. Place the three/four files (xmodel, prototxt, md5sum file, and/or label.json file) into the following path: `/opt/xilinx/share/vitis_ai_library/models/kv260-smartcam`. This will swap the model only for the smartcam. If you want to update the AA2 models, you will update the `kv260-smartcam` to `kv-aibox-reid`.
-3. Locate the "md5sum.txt" in your netname folder, and note the string within the file. Copy this string for later.
+1. Locate the xmodel in the netname folder on your local computer. You will copy this xmodel onto your SD card or scp the xmodel over to the SOM. You will also move the label.json, prototxt, and md5sum folder to the SOM as well.
+2. Place the three/four files (xmodel, prototxt, md5sum file, and/or label.json file) into a folder with the model name you want to use (i.e. ssd_pedestrian_pruned_0_97), and place that folder into the following directory: `/opt/xilinx/share/vitis_ai_library/models/kv260-smartcam`. This will swap the model only for the smartcam. If you want to update the AA2 models, you will update the `kv260-smartcam` to `kv-aibox-reid`.
+3. Locate the "md5sum.txt" in your model folder, and note the string within the file. Copy this string for later.
 
 ## To use the new model for AA1
 To use AA1 with a new .xmodel, you will update the following files.
@@ -123,7 +123,7 @@ To use AA1 with a new .xmodel, you will update the following files.
     }
 ```
 
-3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.` In most cases, the path will stay the same
+3. In the above code, update the “model-name” and “model-path” with the name of the new model, and the path of new model. `${model-path}/${model-name}/${model-name}.xmodel.` In most cases, the path will stay the same. For example, we will change model-name to **ssd_pedestrian_pruned_0_97** and keep the same model-path name. 
 
 4. Going to the same folder where .xmodel is, update the md5sum.txt file with updated string from m5sum.txt within Vitis-AI.
 
