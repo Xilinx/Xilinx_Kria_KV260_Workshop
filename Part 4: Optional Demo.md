@@ -55,7 +55,7 @@ conda activate vitis-ai-tensorflow2
 conda activate vitis-ai-pytorch 
 ```
 
-Locate the quantized folder. 
+Locate the quantized folder within Vitis-AI. You may need to move the folder within the Vitis-AI folder on your computer. The Vitis-AI folder should be located on your Desktop or wherever you saved it.
 
 Before continuing, you will want to create an **arch.json** with an updated fingerprint. Write the json file as below:
 ```
