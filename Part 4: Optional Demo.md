@@ -21,6 +21,7 @@ You will want to generate and donwload the updated model files where you have Vi
 - Go to [Model Zoo](https://github.com/Xilinx/Vitis-AI/tree/master/models/AI-Model-Zoo/model-list) link, and you will select a model of your choice. 
   - For example, we will look at the **ssd_pedestrian_pruned_0_97**. Select that folder and open the "model.yaml" file.
 - Copy the URL link under the board: **GPU**. This link will have the float & quantized files that you will use to deploy the model for the SOM. 
+- Copy the URL link under the board: **ZCU104 and ZCU102**. This will have the prototxt files you will need.
 - Unzip the files on your local computer or via AWS. 
 - You will locate the "deploy.prototxt" and "deploy.caffemodel" in the `/<model_name>/quantized` folder. These will be used later.
 
