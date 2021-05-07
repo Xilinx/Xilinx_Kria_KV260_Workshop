@@ -1,4 +1,4 @@
-# Part 4: Optional Demo (in progress)
+# Part 4: Optional Demo
 
 Depending on time, you may complete this demo at home. 
 
@@ -8,9 +8,12 @@ As you have seen that there are three AI models provided here via `–aitask` co
 -  ssd (ssd_adas_pruned_0_95) 
   
 Currently there are a limited number of Vitis AI models that can be used for the SOM board.  
+On the model zoo site, please locate one of the three model types from this [library](https://www.xilinx.com/html_docs/vitis_ai/1_3/lib_samples.html#tgh1565815780213)
+ - Face Detection
+ - SSD Detection
+ - RefineDet Detection
 
-
-
+Identify a model you will want to swap it out for.
 
 ## Part A: (30 minutes)
 You will want to generate and donwload the updated model files where you have Vitis-AI installed (locally or via [AWS](https://github.com/Xilinx/Xilinx_KV260_Workshop/blob/main/How%20to%20connect%20to%20AWS.md))
