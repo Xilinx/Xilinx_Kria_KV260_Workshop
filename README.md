@@ -40,6 +40,7 @@ Please refer to the links below to learn more about the SOM carrier card, how to
  
 ------------------------------------------------------
 &copy; Copyright 2021 Xilinx, Inc. All rights reserved.
+<br>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
