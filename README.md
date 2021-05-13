@@ -1,4 +1,4 @@
-# Xilinx KV260 Workshop
+# Xilinx Kria KV260 Workshop
 <img src="/images/xilinx-kria-color-cmyk-logo.jpg" width = 200 height = 100>
 
 This repository is designed to set up the KV260 Starter kit board, and then run Accelerated Applications (AA) on the SOM board. In each section, you will learn how to integrate Xilinx SOM board with AI and Smart Camera applications. You can take what you've learned here to your own projects and applications.
