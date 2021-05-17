@@ -59,6 +59,7 @@ This application supports camera and sensor input options with accelerated Machi
 You can connect to the AA1 via the following commands:
 ```
 sudo xmutil unloadapp
+
 sudo xmutil loadapp kv260-smartcam
 ```
 Please wait a few moments before running the next command. Wait to see `Loaded kv260-smartcam successfully` Otherwise, the camera devices will not be available. 
@@ -88,6 +89,7 @@ You will need to setup a RTSP server link to be an input for the application. If
 To load the AI box, run the following command
 ```
 sudo xmutil unloadapp
+
 sudo xmutil loadapp kv260-aibox-reid
 ```
 
@@ -151,6 +153,7 @@ You will see four different videos playing simulatenously.
 ## AA4: Defect detection (Coming Soon)
 ```
 sudo xmutil unloadapp
+
 xmutil loadapp kv260-aa4
 ```
 
