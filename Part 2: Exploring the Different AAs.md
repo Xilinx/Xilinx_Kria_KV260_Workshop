@@ -90,11 +90,11 @@ To load the AI box, run the following command
 sudo xmutil unloadapp
 sudo xmutil loadapp kv260-aibox-reid
 ```
-If you cannot see videos on the 4k monitor, you will need to run the following command to enable AA2 for a 4K display monitor.
+
+To enable multi-stream on 4k monitor, you will need to run the following command to enable AA2 for a 4K display monitor.
 ```
-sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:1920x1080@NV16 
+sudo modetest -M xlnx -D 80000000.v_mix -s 52@40:3840x2160@NV16
 ```
-*Note* the 1920x1080 will depend on your monitor.
 
 ### Streaming 1 channel
 We will first explore one channel and one processor. This will display one video onto your monitor. 
