@@ -10,7 +10,7 @@ You can use a web-browser notebook to interact with the SOM board. To launch the
 
 ```
 $ jupyter-lab --ip=ip-address & 
-// fill in ip-address from the ifconfig command
+# fill in ip-address from the ifconfig command
 ```
 
 To find the notebook URL, enter the following command in the Linux console: `sudo jupyter notebook list`
