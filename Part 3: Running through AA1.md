@@ -43,6 +43,7 @@ You will see an image like the one below:
 
 Enter the following command to view how much power is being consumed via the smart camera. This command is run in the background. 
 ```
+xmutil platformstats -p # This will display the power number on the terminal
 sudo smartcam --file ${file.h264} -i h264 -W 1920 -H 1080 -r 30 --target dp --aitask facedetect &
 ```
 where `${file.h264}` is the path to your h264 video file.
